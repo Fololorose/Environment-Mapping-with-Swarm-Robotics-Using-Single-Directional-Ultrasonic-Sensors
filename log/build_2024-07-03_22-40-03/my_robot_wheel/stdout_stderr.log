@@ -1,0 +1,17 @@
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running develop
+running egg_info
+writing my_robot_wheel.egg-info/PKG-INFO
+writing dependency_links to my_robot_wheel.egg-info/dependency_links.txt
+writing entry points to my_robot_wheel.egg-info/entry_points.txt
+writing requirements to my_robot_wheel.egg-info/requires.txt
+writing top-level names to my_robot_wheel.egg-info/top_level.txt
+reading manifest file 'my_robot_wheel.egg-info/SOURCES.txt'
+writing manifest file 'my_robot_wheel.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages/my-robot-wheel.egg-link (link to .)
+Installing wheel_node script to /home/yuheng/ros2_ws/install/my_robot_wheel/lib/my_robot_wheel
+
+Installed /home/yuheng/ros2_ws/build/my_robot_wheel
+running symlink_data

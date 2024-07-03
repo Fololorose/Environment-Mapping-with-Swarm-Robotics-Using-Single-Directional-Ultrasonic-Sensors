@@ -66,7 +66,11 @@ class WheelNode(Node):
             LaserScan, '/my_robot/laser_scan/center', self.laserscan_callback, 10)
 
         # Initialise distance variable
-        self.distance = float('inf')    
+        self.distance = float('inf') 
+        
+        # Flag to check if the robot is in turning mode 
+        self.turning = False  
+        
     def laserscan_callback(self, msg):
         # Update the distance variable with the latest laser scan reading
         if msg.ranges: # Check if ranges list is not empty
@@ -74,15 +78,21 @@ class WheelNode(Node):
             print(msg.ranges)
         
         # Check if distance is less than 15 cm
-        if self.distance < 0.15:  # ranges are in meters
+        if 0 < self.distance < 0.15 and not self.turning:  # ranges are in meters
+            self.turning = True
             stop()
             time.sleep(1)  # Wait for 1 second to provide buffer
             turnRight()    # Perform turn right action
+        
+        # If the robot is turning, check if the distance is greater than 30 cm to stop turning
+        elif self.turning and self.distance > 0.3:
+            stop()
             time.sleep(1)  # Wait for 1 second to provide buffer
-        else:
-            stop()         # Add a stop as a buffer before moving forward
-            time.sleep(1)  # Wait for 1 second to provide buffer
-            forward()      # Move forward if distance is greater than 15 cm
+            self.turning = False
+
+        # Move forward if distance is greater than 15 cm and not in turning mode
+        if not self.turning:
+            forward()
             time.sleep(1)  # Wait for 1 second to provide buffer
 
 def main(args=None):

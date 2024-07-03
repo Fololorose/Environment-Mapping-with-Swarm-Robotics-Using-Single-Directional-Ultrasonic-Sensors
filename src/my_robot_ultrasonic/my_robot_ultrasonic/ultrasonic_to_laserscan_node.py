@@ -96,9 +96,8 @@ class UltrasonicToLaserScanNode(Node):
         scan_msg.range_min = 0.01  # Minimum range value [m]
         scan_msg.range_max = 4.0  # Maximum range value [m]
         
-        # Ensure the ranges list is of length 360
-        ranges = self.range_dict[frame_id] + [float('inf')] * (360 - len(self.range_dict[frame_id]))
-
+        # Directly use the ranges from self.range_dict[frame_id]
+        ranges = self.range_dict[frame_id]
         scan_msg.ranges = ranges  # Set the ranges
         scan_msg.intensities = []  # Optional: can be used to store intensity values
 
