@@ -32,31 +32,30 @@ class UltrasonicNode(Node):
         self.get_logger().info("Ultrasonic node has been started")
 
     def send_distance_command(self):
-        distances = {"left": None, "center": None, "right": None}
+        distances = {"left": -1, "center": -1, "right": -1}
 
         # Loop through each sensor, get the distance and publish the range
         for ultrasonic_info in self.ultrasonics:
             distance = ultrasonic_info["sensor"].get_range()
 
-            # Check if the reading is valid
-            if distance > 0:
-                range_msg = self.create_range_message(distance, ultrasonic_info["frame_id"])
-                ultrasonic_info["publisher"].publish(range_msg)
-                
-                # Store the distance in the distances dictionary
-                if ultrasonic_info["frame_id"] == "left_ultrasonic_frame":
-                    distances["left"] = distance
-                elif ultrasonic_info["frame_id"] == "center_ultrasonic_frame":
-                    distances["center"] = distance
-                elif ultrasonic_info["frame_id"] == "right_ultrasonic_frame":
-                    distances["right"] = distance
-        
-        # Log all distances together, handle None values
-        left_distance = f"{distances['left']:.2f} cm" if distances['left'] is not None else "N/A"
-        center_distance = f"{distances['center']:.2f} cm" if distances['center'] is not None else "N/A"
-        right_distance = f"{distances['right']:.2f} cm" if distances['right'] is not None else "N/A"
+            range_msg = self.create_range_message(distance, ultrasonic_info["frame_id"])
+            ultrasonic_info["publisher"].publish(range_msg)
+                    
+            # Store the distance in the distances dictionary
+            if ultrasonic_info["frame_id"] == "left_ultrasonic_frame":
+                distances["left"] = distance
+            elif ultrasonic_info["frame_id"] == "center_ultrasonic_frame":
+                distances["center"] = distance
+            elif ultrasonic_info["frame_id"] == "right_ultrasonic_frame":
+                distances["right"] = distance
+
+        # Log all distances together
+        left_distance = f"{distances['left']:.2f} cm"
+        center_distance = f"{distances['center']:.2f} cm"
+        right_distance = f"{distances['right']:.2f} cm"
 
         self.get_logger().info(f"Left: {left_distance}, Center: {center_distance}, Right: {right_distance}")
+
 
     def create_range_message(self, distance, frame_id):
         # Create a single Range message

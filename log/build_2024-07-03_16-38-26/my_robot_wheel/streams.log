@@ -1,0 +1,21 @@
+[4.228s] Invoking command in '/home/yuheng/ros2_ws/build/my_robot_wheel': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_wheel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_wheel/build --no-deps symlink_data --force
+[5.564s] running develop
+[5.570s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.570s]   warnings.warn(
+[6.458s] running egg_info
+[6.459s] writing my_robot_wheel.egg-info/PKG-INFO
+[6.460s] writing dependency_links to my_robot_wheel.egg-info/dependency_links.txt
+[6.462s] writing entry points to my_robot_wheel.egg-info/entry_points.txt
+[6.463s] writing requirements to my_robot_wheel.egg-info/requires.txt
+[6.464s] writing top-level names to my_robot_wheel.egg-info/top_level.txt
+[6.471s] reading manifest file 'my_robot_wheel.egg-info/SOURCES.txt'
+[6.476s] writing manifest file 'my_robot_wheel.egg-info/SOURCES.txt'
+[6.484s] running build_ext
+[6.485s] Creating /home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages/my-robot-wheel.egg-link (link to .)
+[6.488s] Installing wheel_node script to /home/yuheng/ros2_ws/install/my_robot_wheel/lib/my_robot_wheel
+[6.490s] 
+[6.491s] Installed /home/yuheng/ros2_ws/build/my_robot_wheel
+[6.491s] running symlink_data
+[6.492s] symbolically linking /home/yuheng/ros2_ws/build/my_robot_wheel/resource/my_robot_wheel -> /home/yuheng/ros2_ws/install/my_robot_wheel/share/ament_index/resource_index/packages
+[6.494s] symbolically linking /home/yuheng/ros2_ws/build/my_robot_wheel/package.xml -> /home/yuheng/ros2_ws/install/my_robot_wheel/share/my_robot_wheel
+[6.732s] Invoked command in '/home/yuheng/ros2_ws/build/my_robot_wheel' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_wheel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_wheel/build --no-deps symlink_data --force

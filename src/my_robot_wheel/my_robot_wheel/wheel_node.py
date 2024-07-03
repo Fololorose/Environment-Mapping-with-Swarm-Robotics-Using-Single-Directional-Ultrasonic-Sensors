@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import time
-from PCA9685 import PCA9685
+from .PCA9685 import PCA9685
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan
@@ -69,22 +69,27 @@ class WheelNode(Node):
         self.distance = float('inf')    
     def laserscan_callback(self, msg):
         # Update the distance variable with the latest laser scan reading
-        if msg.ranges:  # Check if ranges list is not empty
+        if msg.ranges: # Check if ranges list is not empty
             self.distance = msg.ranges[-1]  # Get the latest range value
+            print(msg.ranges)
         
         # Check if distance is less than 15 cm
         if self.distance < 0.15:  # ranges are in meters
             stop()
             time.sleep(1)  # Wait for 1 second to provide buffer
             turnRight()    # Perform turn right action
+            time.sleep(1)  # Wait for 1 second to provide buffer
         else:
+            stop()         # Add a stop as a buffer before moving forward
+            time.sleep(1)  # Wait for 1 second to provide buffer
             forward()      # Move forward if distance is greater than 15 cm
+            time.sleep(1)  # Wait for 1 second to provide buffer
 
 def main(args=None):
     rclpy.init(args=args) # Initialise the ROS client library
     wheel_node = WheelNode() # Create an instance of the WheelNode
     try:
-        rclpy.spin(wheel_node)# Spin the node to keep it active and listening for messages
+        rclpy.spin(wheel_node) # Spin the node to keep it active and listening for messages
     except KeyboardInterrupt:
         pass # Handle the interruption 
     finally:

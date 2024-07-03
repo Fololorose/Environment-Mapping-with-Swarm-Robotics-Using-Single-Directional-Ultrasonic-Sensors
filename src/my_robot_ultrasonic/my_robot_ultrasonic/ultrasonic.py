@@ -3,7 +3,7 @@ import RPi.GPIO as GPIO
 import time
 
 class Ultrasonic:
-    def __init__(self, gpio_trigger, gpio_echo, range_min=10, range_max=400):
+    def __init__(self, gpio_trigger, gpio_echo, range_min = 5, range_max = 400):
         # Initialise GPIO mode
         GPIO.setmode(GPIO.BCM)
         
@@ -62,9 +62,9 @@ class Ultrasonic:
 
         # Clamp distance within specified range
         if distance > self._range_max:
-            distance = self._range_max
+            distance = -1
         if distance < self._range_min:
-            distance = self._range_min
+            distance = -1
 
         return distance
 
