@@ -1,0 +1,85 @@
+[0.000000] (-) TimerEvent: {}
+[0.001492] (my_robot_ultrasonic) JobQueued: {'identifier': 'my_robot_ultrasonic', 'dependencies': OrderedDict()}
+[0.002081] (my_robot_ultrasonic) JobStarted: {'identifier': 'my_robot_ultrasonic'}
+[0.099172] (-) TimerEvent: {}
+[0.200279] (-) TimerEvent: {}
+[0.301140] (-) TimerEvent: {}
+[0.401750] (-) TimerEvent: {}
+[0.502351] (-) TimerEvent: {}
+[0.602967] (-) TimerEvent: {}
+[0.703556] (-) TimerEvent: {}
+[0.804149] (-) TimerEvent: {}
+[0.904745] (-) TimerEvent: {}
+[1.005357] (-) TimerEvent: {}
+[1.105947] (-) TimerEvent: {}
+[1.206782] (-) TimerEvent: {}
+[1.307823] (-) TimerEvent: {}
+[1.408741] (-) TimerEvent: {}
+[1.509892] (-) TimerEvent: {}
+[1.674168] (-) TimerEvent: {}
+[1.774809] (-) TimerEvent: {}
+[1.875426] (-) TimerEvent: {}
+[1.976142] (-) TimerEvent: {}
+[2.076791] (-) TimerEvent: {}
+[2.177453] (-) TimerEvent: {}
+[2.278029] (-) TimerEvent: {}
+[2.378670] (-) TimerEvent: {}
+[2.479313] (-) TimerEvent: {}
+[2.580082] (-) TimerEvent: {}
+[2.681392] (-) TimerEvent: {}
+[2.782550] (-) TimerEvent: {}
+[2.883606] (-) TimerEvent: {}
+[2.984368] (-) TimerEvent: {}
+[3.085116] (-) TimerEvent: {}
+[3.185760] (-) TimerEvent: {}
+[3.286416] (-) TimerEvent: {}
+[3.387249] (-) TimerEvent: {}
+[3.480671] (my_robot_ultrasonic) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yuheng/ros2_ws/build/my_robot_ultrasonic/build', '--no-deps', 'symlink_data'], 'cwd': '/home/yuheng/ros2_ws/build/my_robot_ultrasonic', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'yuheng', 'SSH_CLIENT': '192.168.0.171 62987 22', 'LC_TIME': 'ms_MY.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/yuheng', 'OLDPWD': '/home/yuheng', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ms_MY.UTF-8', 'LC_CTYPE': 'UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/yuheng/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'yuheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/yuheng/ros2_ws/install/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'PWD': '/home/yuheng/ros2_ws/build/my_robot_ultrasonic', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.171 62987 192.168.0.108 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yuheng/ros2_ws/build/my_robot_ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:/home/yuheng/ros2_ws/build/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:/home/yuheng/ros2_ws/build/my_robot_controller:/home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1'}, 'shell': False}
+[3.495181] (-) TimerEvent: {}
+[3.599854] (-) TimerEvent: {}
+[3.700497] (-) TimerEvent: {}
+[3.801098] (-) TimerEvent: {}
+[3.901678] (-) TimerEvent: {}
+[4.002267] (-) TimerEvent: {}
+[4.102888] (-) TimerEvent: {}
+[4.203477] (-) TimerEvent: {}
+[4.304094] (-) TimerEvent: {}
+[4.404772] (-) TimerEvent: {}
+[4.505501] (-) TimerEvent: {}
+[4.583651] (my_robot_ultrasonic) StdoutLine: {'line': b'running develop\n'}
+[4.588709] (my_robot_ultrasonic) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[4.589371] (my_robot_ultrasonic) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.605656] (-) TimerEvent: {}
+[4.706275] (-) TimerEvent: {}
+[4.806853] (-) TimerEvent: {}
+[4.907434] (-) TimerEvent: {}
+[5.008085] (-) TimerEvent: {}
+[5.108700] (-) TimerEvent: {}
+[5.209267] (-) TimerEvent: {}
+[5.293102] (my_robot_ultrasonic) StdoutLine: {'line': b'running egg_info\n'}
+[5.293707] (my_robot_ultrasonic) StdoutLine: {'line': b'writing my_robot_ultrasonic.egg-info/PKG-INFO\n'}
+[5.294839] (my_robot_ultrasonic) StdoutLine: {'line': b'writing dependency_links to my_robot_ultrasonic.egg-info/dependency_links.txt\n'}
+[5.295657] (my_robot_ultrasonic) StdoutLine: {'line': b'writing entry points to my_robot_ultrasonic.egg-info/entry_points.txt\n'}
+[5.296356] (my_robot_ultrasonic) StdoutLine: {'line': b'writing requirements to my_robot_ultrasonic.egg-info/requires.txt\n'}
+[5.297008] (my_robot_ultrasonic) StdoutLine: {'line': b'writing top-level names to my_robot_ultrasonic.egg-info/top_level.txt\n'}
+[5.304142] (my_robot_ultrasonic) StdoutLine: {'line': b"reading manifest file 'my_robot_ultrasonic.egg-info/SOURCES.txt'\n"}
+[5.309414] (-) TimerEvent: {}
+[5.345459] (my_robot_ultrasonic) StdoutLine: {'line': b"writing manifest file 'my_robot_ultrasonic.egg-info/SOURCES.txt'\n"}
+[5.354069] (my_robot_ultrasonic) StdoutLine: {'line': b'running build_ext\n'}
+[5.354791] (my_robot_ultrasonic) StdoutLine: {'line': b'Creating /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my-robot-ultrasonic.egg-link (link to .)\n'}
+[5.358658] (my_robot_ultrasonic) StdoutLine: {'line': b'Installing ultrasonic_node script to /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/my_robot_ultrasonic\n'}
+[5.359463] (my_robot_ultrasonic) StdoutLine: {'line': b'Installing ultrasonic_to_laserscan_node script to /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/my_robot_ultrasonic\n'}
+[5.360731] (my_robot_ultrasonic) StdoutLine: {'line': b'\n'}
+[5.361272] (my_robot_ultrasonic) StdoutLine: {'line': b'Installed /home/yuheng/ros2_ws/build/my_robot_ultrasonic\n'}
+[5.361599] (my_robot_ultrasonic) StdoutLine: {'line': b'running symlink_data\n'}
+[5.409728] (-) TimerEvent: {}
+[5.510972] (-) TimerEvent: {}
+[5.527370] (my_robot_ultrasonic) CommandEnded: {'returncode': 0}
+[5.611190] (-) TimerEvent: {}
+[5.712396] (-) TimerEvent: {}
+[5.813167] (-) TimerEvent: {}
+[5.914271] (-) TimerEvent: {}
+[6.015366] (-) TimerEvent: {}
+[6.116418] (-) TimerEvent: {}
+[6.191910] (my_robot_ultrasonic) JobEnded: {'identifier': 'my_robot_ultrasonic', 'rc': 0}
+[6.195960] (-) EventReactorShutdown: {}

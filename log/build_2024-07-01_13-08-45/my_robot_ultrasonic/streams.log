@@ -1,0 +1,45 @@
+[3.921s] Invoking command in '/home/yuheng/ros2_ws/build/my_robot_ultrasonic': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build
+[5.166s] running develop
+[5.172s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.172s]   warnings.warn(
+[5.973s] Removing /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my-robot-ultrasonic.egg-link (link to .)
+[6.103s] Invoked command in '/home/yuheng/ros2_ws/build/my_robot_ultrasonic' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build
+[6.112s] Invoking command in '/home/yuheng/ros2_ws/src/my_robot_ultrasonic': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_ultrasonic build --build-base /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build install --record /home/yuheng/ros2_ws/build/my_robot_ultrasonic/install.log --single-version-externally-managed install_data --force
+[7.122s] running egg_info
+[7.125s] writing ../../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/PKG-INFO
+[7.126s] writing dependency_links to ../../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/dependency_links.txt
+[7.127s] writing entry points to ../../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/entry_points.txt
+[7.128s] writing requirements to ../../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/requires.txt
+[7.128s] writing top-level names to ../../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/top_level.txt
+[7.137s] reading manifest file '../../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/SOURCES.txt'
+[7.142s] writing manifest file '../../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/SOURCES.txt'
+[7.142s] running build
+[7.143s] running build_py
+[7.144s] creating /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build
+[7.145s] creating /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build/lib
+[7.145s] creating /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic
+[7.145s] copying my_robot_ultrasonic/ultrasonic.py -> /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic
+[7.146s] copying my_robot_ultrasonic/ultrasonic_node.py -> /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic
+[7.146s] copying my_robot_ultrasonic/ultrasonic_to_laserscan_node.py -> /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic
+[7.147s] copying my_robot_ultrasonic/__init__.py -> /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic
+[7.148s] running install
+[7.149s] running install_lib
+[7.152s] creating /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic
+[7.153s] copying /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic/ultrasonic.py -> /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic
+[7.154s] copying /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic/ultrasonic_node.py -> /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic
+[7.154s] copying /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic/ultrasonic_to_laserscan_node.py -> /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic
+[7.155s] copying /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic/__init__.py -> /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic
+[7.158s] byte-compiling /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic/ultrasonic.py to ultrasonic.cpython-310.pyc
+[7.161s] byte-compiling /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic/ultrasonic_node.py to ultrasonic_node.cpython-310.pyc
+[7.164s] byte-compiling /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic/ultrasonic_to_laserscan_node.py to ultrasonic_to_laserscan_node.cpython-310.pyc
+[7.168s] byte-compiling /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic/__init__.py to __init__.cpython-310.pyc
+[7.169s] running install_data
+[7.169s] copying resource/my_robot_ultrasonic -> /home/yuheng/ros2_ws/install/my_robot_ultrasonic/share/ament_index/resource_index/packages
+[7.172s] copying package.xml -> /home/yuheng/ros2_ws/install/my_robot_ultrasonic/share/my_robot_ultrasonic
+[7.172s] running install_egg_info
+[7.179s] Copying ../../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info to /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic-0.0.0-py3.10.egg-info
+[7.186s] running install_scripts
+[7.267s] Installing ultrasonic_node script to /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/my_robot_ultrasonic
+[7.268s] Installing ultrasonic_to_laserscan_node script to /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/my_robot_ultrasonic
+[7.270s] writing list of installed files to '/home/yuheng/ros2_ws/build/my_robot_ultrasonic/install.log'
+[7.385s] Invoked command in '/home/yuheng/ros2_ws/src/my_robot_ultrasonic' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_ultrasonic build --build-base /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build install --record /home/yuheng/ros2_ws/build/my_robot_ultrasonic/install.log --single-version-externally-managed install_data --force

@@ -1,0 +1,19 @@
+[4.143s] Invoking command in '/home/yuheng/ros2_ws/build/my_robot_ultrasonic': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_ultrasonic/prefix_override:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build --no-deps symlink_data
+[5.460s] running develop
+[5.466s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.466s]   warnings.warn(
+[6.328s] running egg_info
+[6.329s] writing my_robot_ultrasonic.egg-info/PKG-INFO
+[6.330s] writing dependency_links to my_robot_ultrasonic.egg-info/dependency_links.txt
+[6.331s] writing entry points to my_robot_ultrasonic.egg-info/entry_points.txt
+[6.332s] writing requirements to my_robot_ultrasonic.egg-info/requires.txt
+[6.334s] writing top-level names to my_robot_ultrasonic.egg-info/top_level.txt
+[6.343s] reading manifest file 'my_robot_ultrasonic.egg-info/SOURCES.txt'
+[6.475s] writing manifest file 'my_robot_ultrasonic.egg-info/SOURCES.txt'
+[6.522s] running build_ext
+[6.523s] Creating /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my-robot-ultrasonic.egg-link (link to .)
+[6.527s] Installing ultrasonic_node script to /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/my_robot_ultrasonic
+[6.529s] 
+[6.529s] Installed /home/yuheng/ros2_ws/build/my_robot_ultrasonic
+[6.530s] running symlink_data
+[6.668s] Invoked command in '/home/yuheng/ros2_ws/build/my_robot_ultrasonic' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_ultrasonic/prefix_override:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build --no-deps symlink_data

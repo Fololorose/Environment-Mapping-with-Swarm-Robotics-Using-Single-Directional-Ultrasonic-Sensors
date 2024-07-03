@@ -1,0 +1,44 @@
+[4.115s] Invoking command in '/home/yuheng/ros2_ws/src/my_robot_ultrasonic': PYTHONPATH=/home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_robot_ultrasonic build --build-base /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build install --record /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/install.log --single-version-externally-managed install_data
+[5.292s] running egg_info
+[5.294s] creating ../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info
+[5.295s] writing ../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/PKG-INFO
+[5.296s] writing dependency_links to ../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/dependency_links.txt
+[5.297s] writing entry points to ../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/entry_points.txt
+[5.298s] writing requirements to ../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/requires.txt
+[5.299s] writing top-level names to ../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/top_level.txt
+[5.300s] writing manifest file '../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/SOURCES.txt'
+[5.308s] reading manifest file '../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/SOURCES.txt'
+[5.312s] writing manifest file '../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info/SOURCES.txt'
+[5.313s] running build
+[5.315s] running build_py
+[5.316s] creating /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build
+[5.317s] creating /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build/lib
+[5.317s] creating /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic
+[5.318s] copying my_robot_ultrasonic/ultrasonic.py -> /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic
+[5.320s] copying my_robot_ultrasonic/ultrasonic_node.py -> /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic
+[5.321s] copying my_robot_ultrasonic/ultrasonic_to_laserscan_node.py -> /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic
+[5.322s] copying my_robot_ultrasonic/__init__.py -> /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic
+[5.322s] running install
+[5.323s] running install_lib
+[5.327s] creating /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic
+[5.328s] copying /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic/ultrasonic.py -> /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic
+[5.328s] copying /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic/ultrasonic_node.py -> /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic
+[5.329s] copying /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic/ultrasonic_to_laserscan_node.py -> /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic
+[5.330s] copying /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build/lib/my_robot_ultrasonic/__init__.py -> /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic
+[5.335s] byte-compiling /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic/ultrasonic.py to ultrasonic.cpython-310.pyc
+[5.336s] byte-compiling /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic/ultrasonic_node.py to ultrasonic_node.cpython-310.pyc
+[5.340s] byte-compiling /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic/ultrasonic_to_laserscan_node.py to ultrasonic_to_laserscan_node.cpython-310.pyc
+[5.344s] byte-compiling /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic/__init__.py to __init__.cpython-310.pyc
+[5.347s] running install_data
+[5.348s] creating /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/ament_index
+[5.349s] creating /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/ament_index/resource_index
+[5.350s] creating /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/ament_index/resource_index/packages
+[5.350s] copying resource/my_robot_ultrasonic -> /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/ament_index/resource_index/packages
+[5.352s] copying package.xml -> /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/my_robot_ultrasonic
+[5.353s] running install_egg_info
+[5.356s] Copying ../build/my_robot_ultrasonic/my_robot_ultrasonic.egg-info to /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages/my_robot_ultrasonic-0.0.0-py3.10.egg-info
+[5.362s] running install_scripts
+[5.454s] Installing ultrasonic_node script to /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/my_robot_ultrasonic
+[5.456s] Installing ultrasonic_to_laserscan_node script to /home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/my_robot_ultrasonic
+[5.458s] writing list of installed files to '/home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/install.log'
+[5.697s] Invoked command in '/home/yuheng/ros2_ws/src/my_robot_ultrasonic' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_robot_ultrasonic build --build-base /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build install --record /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/install.log --single-version-externally-managed install_data

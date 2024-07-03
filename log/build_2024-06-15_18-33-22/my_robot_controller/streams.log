@@ -1,0 +1,19 @@
+[3.925s] Invoking command in '/home/yuheng/ros2_ws/build/my_robot_controller': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_controller/prefix_override:/home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_controller/build --no-deps symlink_data
+[5.211s] running develop
+[5.213s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.214s]   warnings.warn(
+[6.048s] running egg_info
+[6.049s] writing my_robot_controller.egg-info/PKG-INFO
+[6.051s] writing dependency_links to my_robot_controller.egg-info/dependency_links.txt
+[6.053s] writing entry points to my_robot_controller.egg-info/entry_points.txt
+[6.054s] writing requirements to my_robot_controller.egg-info/requires.txt
+[6.054s] writing top-level names to my_robot_controller.egg-info/top_level.txt
+[6.061s] reading manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[6.065s] writing manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[6.073s] running build_ext
+[6.074s] Creating /home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my-robot-controller.egg-link (link to .)
+[6.079s] Installing test_node script to /home/yuheng/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[6.079s] 
+[6.080s] Installed /home/yuheng/ros2_ws/build/my_robot_controller
+[6.081s] running symlink_data
+[6.293s] Invoked command in '/home/yuheng/ros2_ws/build/my_robot_controller' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_controller/prefix_override:/home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_controller/build --no-deps symlink_data

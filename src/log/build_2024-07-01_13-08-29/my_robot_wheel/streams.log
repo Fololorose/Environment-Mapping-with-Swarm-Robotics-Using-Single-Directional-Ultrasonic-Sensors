@@ -1,0 +1,33 @@
+[4.092s] Invoking command in '/home/yuheng/ros2_ws/src/my_robot_wheel': PYTHONPATH=/home/yuheng/ros2_ws/src/build/my_robot_wheel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/src/install/my_robot_wheel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_robot_wheel build --build-base /home/yuheng/ros2_ws/src/build/my_robot_wheel/build install --record /home/yuheng/ros2_ws/src/build/my_robot_wheel/install.log --single-version-externally-managed install_data
+[5.261s] running egg_info
+[5.264s] creating ../build/my_robot_wheel/my_robot_wheel.egg-info
+[5.266s] writing ../build/my_robot_wheel/my_robot_wheel.egg-info/PKG-INFO
+[5.269s] writing dependency_links to ../build/my_robot_wheel/my_robot_wheel.egg-info/dependency_links.txt
+[5.269s] writing entry points to ../build/my_robot_wheel/my_robot_wheel.egg-info/entry_points.txt
+[5.270s] writing requirements to ../build/my_robot_wheel/my_robot_wheel.egg-info/requires.txt
+[5.271s] writing top-level names to ../build/my_robot_wheel/my_robot_wheel.egg-info/top_level.txt
+[5.271s] writing manifest file '../build/my_robot_wheel/my_robot_wheel.egg-info/SOURCES.txt'
+[5.277s] reading manifest file '../build/my_robot_wheel/my_robot_wheel.egg-info/SOURCES.txt'
+[5.281s] writing manifest file '../build/my_robot_wheel/my_robot_wheel.egg-info/SOURCES.txt'
+[5.281s] running build
+[5.282s] running build_py
+[5.283s] creating /home/yuheng/ros2_ws/src/build/my_robot_wheel/build
+[5.283s] creating /home/yuheng/ros2_ws/src/build/my_robot_wheel/build/lib
+[5.284s] creating /home/yuheng/ros2_ws/src/build/my_robot_wheel/build/lib/my_robot_wheel
+[5.284s] copying my_robot_wheel/__init__.py -> /home/yuheng/ros2_ws/src/build/my_robot_wheel/build/lib/my_robot_wheel
+[5.286s] running install
+[5.286s] running install_lib
+[5.289s] creating /home/yuheng/ros2_ws/src/install/my_robot_wheel/lib/python3.10/site-packages/my_robot_wheel
+[5.290s] copying /home/yuheng/ros2_ws/src/build/my_robot_wheel/build/lib/my_robot_wheel/__init__.py -> /home/yuheng/ros2_ws/src/install/my_robot_wheel/lib/python3.10/site-packages/my_robot_wheel
+[5.293s] byte-compiling /home/yuheng/ros2_ws/src/install/my_robot_wheel/lib/python3.10/site-packages/my_robot_wheel/__init__.py to __init__.cpython-310.pyc
+[5.296s] running install_data
+[5.297s] creating /home/yuheng/ros2_ws/src/install/my_robot_wheel/share/ament_index
+[5.298s] creating /home/yuheng/ros2_ws/src/install/my_robot_wheel/share/ament_index/resource_index
+[5.298s] creating /home/yuheng/ros2_ws/src/install/my_robot_wheel/share/ament_index/resource_index/packages
+[5.300s] copying resource/my_robot_wheel -> /home/yuheng/ros2_ws/src/install/my_robot_wheel/share/ament_index/resource_index/packages
+[5.301s] copying package.xml -> /home/yuheng/ros2_ws/src/install/my_robot_wheel/share/my_robot_wheel
+[5.301s] running install_egg_info
+[5.307s] Copying ../build/my_robot_wheel/my_robot_wheel.egg-info to /home/yuheng/ros2_ws/src/install/my_robot_wheel/lib/python3.10/site-packages/my_robot_wheel-0.0.0-py3.10.egg-info
+[5.312s] running install_scripts
+[5.405s] writing list of installed files to '/home/yuheng/ros2_ws/src/build/my_robot_wheel/install.log'
+[5.583s] Invoked command in '/home/yuheng/ros2_ws/src/my_robot_wheel' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/src/build/my_robot_wheel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/src/install/my_robot_wheel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_robot_wheel build --build-base /home/yuheng/ros2_ws/src/build/my_robot_wheel/build install --record /home/yuheng/ros2_ws/src/build/my_robot_wheel/install.log --single-version-externally-managed install_data

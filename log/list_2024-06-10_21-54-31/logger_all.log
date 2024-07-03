@@ -1,0 +1,56 @@
+[0.778s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/yuheng/ros2_ws']
+[0.778s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/yuheng/ros2_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff90cc8430>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0xffff90e70a30>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0xffff90e70a30>>)
+[2.471s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.472s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.474s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yuheng/ros2_ws'
+[2.475s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[2.476s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extension 'ignore'
+[2.476s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extension 'ignore_ament_install'
+[2.477s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extensions ['colcon_pkg']
+[2.477s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extension 'colcon_pkg'
+[2.478s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extensions ['colcon_meta']
+[2.478s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extension 'colcon_meta'
+[2.478s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extensions ['ros']
+[2.480s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extension 'ros'
+[2.559s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extensions ['cmake', 'python']
+[2.559s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extension 'cmake'
+[2.560s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extension 'python'
+[2.561s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extensions ['python_setup_py']
+[2.561s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws) by extension 'python_setup_py'
+[2.563s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[2.563s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/build) by extension 'ignore'
+[2.564s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/build) ignored
+[2.566s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[2.567s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/install) by extension 'ignore'
+[2.568s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/install) ignored
+[2.569s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[2.570s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/log) by extension 'ignore'
+[2.570s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/log) ignored
+[2.572s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[2.572s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extension 'ignore'
+[2.573s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extension 'ignore_ament_install'
+[2.574s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extensions ['colcon_pkg']
+[2.575s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extension 'colcon_pkg'
+[2.575s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extensions ['colcon_meta']
+[2.575s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extension 'colcon_meta'
+[2.576s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extensions ['ros']
+[2.577s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extension 'ros'
+[2.578s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extensions ['cmake', 'python']
+[2.578s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extension 'cmake'
+[2.579s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extension 'python'
+[2.579s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extensions ['python_setup_py']
+[2.580s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src) by extension 'python_setup_py'
+[2.582s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src/my_robot_controller) by extensions ['ignore', 'ignore_ament_install']
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src/my_robot_controller) by extension 'ignore'
+[2.583s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src/my_robot_controller) by extension 'ignore_ament_install'
+[2.584s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src/my_robot_controller) by extensions ['colcon_pkg']
+[2.584s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src/my_robot_controller) by extension 'colcon_pkg'
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src/my_robot_controller) by extensions ['colcon_meta']
+[2.585s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src/my_robot_controller) by extension 'colcon_meta'
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src/my_robot_controller) by extensions ['ros']
+[2.586s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yuheng/ros2_ws/src/my_robot_controller) by extension 'ros'
+[2.606s] DEBUG:colcon.colcon_core.package_identification:Package '/home/yuheng/ros2_ws/src/my_robot_controller' with type 'ros.ament_python' and name 'my_robot_controller'
+[2.606s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

@@ -1,0 +1,21 @@
+[2.557s] Invoking command in '/home/yuheng/ros2_ws/build/my_robot_controller': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_controller/prefix_override:/home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_controller/build --no-deps symlink_data --force
+[3.692s] running develop
+[3.697s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.697s]   warnings.warn(
+[4.405s] running egg_info
+[4.405s] writing my_robot_controller.egg-info/PKG-INFO
+[4.406s] writing dependency_links to my_robot_controller.egg-info/dependency_links.txt
+[4.407s] writing entry points to my_robot_controller.egg-info/entry_points.txt
+[4.408s] writing requirements to my_robot_controller.egg-info/requires.txt
+[4.408s] writing top-level names to my_robot_controller.egg-info/top_level.txt
+[4.416s] reading manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[4.420s] writing manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[4.426s] running build_ext
+[4.426s] Creating /home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my-robot-controller.egg-link (link to .)
+[4.430s] Installing test_node script to /home/yuheng/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[4.431s] 
+[4.431s] Installed /home/yuheng/ros2_ws/build/my_robot_controller
+[4.432s] running symlink_data
+[4.432s] symbolically linking /home/yuheng/ros2_ws/build/my_robot_controller/resource/my_robot_controller -> /home/yuheng/ros2_ws/install/my_robot_controller/share/ament_index/resource_index/packages
+[4.433s] symbolically linking /home/yuheng/ros2_ws/build/my_robot_controller/package.xml -> /home/yuheng/ros2_ws/install/my_robot_controller/share/my_robot_controller
+[4.573s] Invoked command in '/home/yuheng/ros2_ws/build/my_robot_controller' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_controller/prefix_override:/home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_controller/build --no-deps symlink_data --force

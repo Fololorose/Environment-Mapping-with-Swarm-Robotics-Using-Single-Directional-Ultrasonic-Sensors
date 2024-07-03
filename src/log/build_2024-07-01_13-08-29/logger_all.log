@@ -1,0 +1,164 @@
+[0.712s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.712s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff9f21f940>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9f21f4f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9f21f4f0>>)
+[1.827s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.828s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.829s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.829s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.829s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yuheng/ros2_ws/src'
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.830s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.831s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.876s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.876s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.876s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.876s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.876s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.877s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.877s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.877s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.879s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.881s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_ultrasonic) by extensions ['ignore', 'ignore_ament_install']
+[1.881s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_ultrasonic) by extension 'ignore'
+[1.881s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_ultrasonic) by extension 'ignore_ament_install'
+[1.881s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_ultrasonic) by extensions ['colcon_pkg']
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_ultrasonic) by extension 'colcon_pkg'
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_ultrasonic) by extensions ['colcon_meta']
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_ultrasonic) by extension 'colcon_meta'
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_ultrasonic) by extensions ['ros']
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_ultrasonic) by extension 'ros'
+[1.895s] DEBUG:colcon.colcon_core.package_identification:Package 'my_robot_ultrasonic' with type 'ros.ament_python' and name 'my_robot_ultrasonic'
+[1.896s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_wheel) by extensions ['ignore', 'ignore_ament_install']
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_wheel) by extension 'ignore'
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_wheel) by extension 'ignore_ament_install'
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_wheel) by extensions ['colcon_pkg']
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_wheel) by extension 'colcon_pkg'
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_wheel) by extensions ['colcon_meta']
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_wheel) by extension 'colcon_meta'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_wheel) by extensions ['ros']
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(my_robot_wheel) by extension 'ros'
+[1.901s] DEBUG:colcon.colcon_core.package_identification:Package 'my_robot_wheel' with type 'ros.ament_python' and name 'my_robot_wheel'
+[1.901s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.901s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.901s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.901s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.901s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.043s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.043s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.058s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/yuheng/ros2_ws/install
+[2.067s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[2.074s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.282s] Level 5:colcon.colcon_core.verb:set package 'my_robot_ultrasonic' build argument 'cmake_args' from command line to 'None'
+[2.282s] Level 5:colcon.colcon_core.verb:set package 'my_robot_ultrasonic' build argument 'cmake_target' from command line to 'None'
+[2.282s] Level 5:colcon.colcon_core.verb:set package 'my_robot_ultrasonic' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'my_robot_ultrasonic' build argument 'cmake_clean_cache' from command line to 'False'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'my_robot_ultrasonic' build argument 'cmake_clean_first' from command line to 'False'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'my_robot_ultrasonic' build argument 'cmake_force_configure' from command line to 'False'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'my_robot_ultrasonic' build argument 'ament_cmake_args' from command line to 'None'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'my_robot_ultrasonic' build argument 'catkin_cmake_args' from command line to 'None'
+[2.283s] Level 5:colcon.colcon_core.verb:set package 'my_robot_ultrasonic' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.283s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_ultrasonic' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yuheng/ros2_ws/src/build/my_robot_ultrasonic', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic', 'merge_install': False, 'path': '/home/yuheng/ros2_ws/src/my_robot_ultrasonic', 'symlink_install': False, 'test_result_base': None}
+[2.285s] Level 5:colcon.colcon_core.verb:set package 'my_robot_wheel' build argument 'cmake_args' from command line to 'None'
+[2.285s] Level 5:colcon.colcon_core.verb:set package 'my_robot_wheel' build argument 'cmake_target' from command line to 'None'
+[2.285s] Level 5:colcon.colcon_core.verb:set package 'my_robot_wheel' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.285s] Level 5:colcon.colcon_core.verb:set package 'my_robot_wheel' build argument 'cmake_clean_cache' from command line to 'False'
+[2.285s] Level 5:colcon.colcon_core.verb:set package 'my_robot_wheel' build argument 'cmake_clean_first' from command line to 'False'
+[2.285s] Level 5:colcon.colcon_core.verb:set package 'my_robot_wheel' build argument 'cmake_force_configure' from command line to 'False'
+[2.285s] Level 5:colcon.colcon_core.verb:set package 'my_robot_wheel' build argument 'ament_cmake_args' from command line to 'None'
+[2.285s] Level 5:colcon.colcon_core.verb:set package 'my_robot_wheel' build argument 'catkin_cmake_args' from command line to 'None'
+[2.286s] Level 5:colcon.colcon_core.verb:set package 'my_robot_wheel' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.286s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_wheel' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yuheng/ros2_ws/src/build/my_robot_wheel', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yuheng/ros2_ws/src/install/my_robot_wheel', 'merge_install': False, 'path': '/home/yuheng/ros2_ws/src/my_robot_wheel', 'symlink_install': False, 'test_result_base': None}
+[2.286s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.289s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.290s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yuheng/ros2_ws/src/my_robot_ultrasonic' with build type 'ament_python'
+[2.291s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_ultrasonic', 'ament_prefix_path')
+[2.310s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/my_robot_ultrasonic/hook/ament_prefix_path.ps1'
+[2.315s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/my_robot_ultrasonic/hook/ament_prefix_path.dsv'
+[2.318s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/my_robot_ultrasonic/hook/ament_prefix_path.sh'
+[2.322s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.322s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.341s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yuheng/ros2_ws/src/my_robot_wheel' with build type 'ament_python'
+[2.341s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_wheel', 'ament_prefix_path')
+[2.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yuheng/ros2_ws/src/install/my_robot_wheel/share/my_robot_wheel/hook/ament_prefix_path.ps1'
+[2.345s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yuheng/ros2_ws/src/install/my_robot_wheel/share/my_robot_wheel/hook/ament_prefix_path.dsv'
+[2.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yuheng/ros2_ws/src/install/my_robot_wheel/share/my_robot_wheel/hook/ament_prefix_path.sh'
+[2.349s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.350s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.473s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yuheng/ros2_ws/src/my_robot_ultrasonic'
+[3.474s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.474s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.582s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yuheng/ros2_ws/src/my_robot_wheel'
+[4.583s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.583s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.407s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yuheng/ros2_ws/src/my_robot_ultrasonic': PYTHONPATH=/home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_robot_ultrasonic build --build-base /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build install --record /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/install.log --single-version-externally-managed install_data
+[6.434s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yuheng/ros2_ws/src/my_robot_wheel': PYTHONPATH=/home/yuheng/ros2_ws/src/build/my_robot_wheel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/src/install/my_robot_wheel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_robot_wheel build --build-base /home/yuheng/ros2_ws/src/build/my_robot_wheel/build install --record /home/yuheng/ros2_ws/src/build/my_robot_wheel/install.log --single-version-externally-managed install_data
+[7.925s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yuheng/ros2_ws/src/my_robot_wheel' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/src/build/my_robot_wheel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/src/install/my_robot_wheel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_robot_wheel build --build-base /home/yuheng/ros2_ws/src/build/my_robot_wheel/build install --record /home/yuheng/ros2_ws/src/build/my_robot_wheel/install.log --single-version-externally-managed install_data
+[7.948s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_wheel' for CMake module files
+[7.950s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_wheel' for CMake config files
+[7.954s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_wheel/lib'
+[7.955s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_wheel/bin'
+[7.955s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_wheel/lib/pkgconfig/my_robot_wheel.pc'
+[7.956s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_wheel/lib/python3.10/site-packages'
+[7.956s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_wheel', 'pythonpath')
+[7.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yuheng/ros2_ws/src/install/my_robot_wheel/share/my_robot_wheel/hook/pythonpath.ps1'
+[7.959s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yuheng/ros2_ws/src/install/my_robot_wheel/share/my_robot_wheel/hook/pythonpath.dsv'
+[7.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yuheng/ros2_ws/src/install/my_robot_wheel/share/my_robot_wheel/hook/pythonpath.sh'
+[7.962s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_wheel/bin'
+[7.962s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_wheel)
+[7.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/yuheng/ros2_ws/src/install/my_robot_wheel/share/my_robot_wheel/package.ps1'
+[7.968s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yuheng/ros2_ws/src/install/my_robot_wheel/share/my_robot_wheel/package.dsv'
+[7.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/yuheng/ros2_ws/src/install/my_robot_wheel/share/my_robot_wheel/package.sh'
+[7.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/yuheng/ros2_ws/src/install/my_robot_wheel/share/my_robot_wheel/package.bash'
+[7.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/yuheng/ros2_ws/src/install/my_robot_wheel/share/my_robot_wheel/package.zsh'
+[7.982s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yuheng/ros2_ws/src/install/my_robot_wheel/share/colcon-core/packages/my_robot_wheel)
+[7.987s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic' for CMake module files
+[7.989s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yuheng/ros2_ws/src/my_robot_ultrasonic' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_robot_ultrasonic build --build-base /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/build install --record /home/yuheng/ros2_ws/src/build/my_robot_ultrasonic/install.log --single-version-externally-managed install_data
+[7.991s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic' for CMake config files
+[7.994s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib'
+[7.995s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/bin'
+[7.995s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/pkgconfig/my_robot_ultrasonic.pc'
+[7.996s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/lib/python3.10/site-packages'
+[7.996s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_ultrasonic', 'pythonpath')
+[7.997s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/my_robot_ultrasonic/hook/pythonpath.ps1'
+[7.999s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/my_robot_ultrasonic/hook/pythonpath.dsv'
+[8.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/my_robot_ultrasonic/hook/pythonpath.sh'
+[8.002s] Level 1:colcon.colcon_core.environment:checking '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/bin'
+[8.003s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_ultrasonic)
+[8.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/my_robot_ultrasonic/package.ps1'
+[8.006s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/my_robot_ultrasonic/package.dsv'
+[8.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/my_robot_ultrasonic/package.sh'
+[8.009s] INFO:colcon.colcon_core.shell:Creating package script '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/my_robot_ultrasonic/package.bash'
+[8.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/my_robot_ultrasonic/package.zsh'
+[8.012s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yuheng/ros2_ws/src/install/my_robot_ultrasonic/share/colcon-core/packages/my_robot_ultrasonic)
+[8.013s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.014s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.015s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.015s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.043s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.044s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.044s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.049s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[8.049s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.050s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yuheng/ros2_ws/src/install/local_setup.ps1'
+[8.055s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yuheng/ros2_ws/src/install/_local_setup_util_ps1.py'
+[8.061s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yuheng/ros2_ws/src/install/setup.ps1'
+[8.067s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yuheng/ros2_ws/src/install/local_setup.sh'
+[8.070s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yuheng/ros2_ws/src/install/_local_setup_util_sh.py'
+[8.072s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yuheng/ros2_ws/src/install/setup.sh'
+[8.077s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yuheng/ros2_ws/src/install/local_setup.bash'
+[8.080s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yuheng/ros2_ws/src/install/setup.bash'
+[8.085s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yuheng/ros2_ws/src/install/local_setup.zsh'
+[8.088s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yuheng/ros2_ws/src/install/setup.zsh'
