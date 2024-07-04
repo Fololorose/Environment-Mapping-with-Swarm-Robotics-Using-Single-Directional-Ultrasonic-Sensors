@@ -77,15 +77,16 @@ class WheelNode(Node):
             self.distance = msg.ranges[-1]  # Get the latest range value
             print(msg.ranges)
         
-        # Check if distance is less than 15 cm
-        if 0 < self.distance < 0.15 and not self.turning:  # ranges are in meters
+        # Check if distance is less than 50 cm
+        if 0 < self.distance < 0.5 and not self.turning:  # ranges are in meters
             self.turning = True
             stop()
             time.sleep(1)  # Wait for 1 second to provide buffer
-            turnRight()    # Perform turn right action
+            turnLeft()    # Perform turn left action
+            time.sleep(1)  # Wait for 1 second to provide buffer
         
-        # If the robot is turning, check if the distance is greater than 30 cm to stop turning
-        elif self.turning and self.distance > 0.3:
+        # If the robot is turning, check if the distance is greater than 100 cm to stop turning
+        elif self.turning and self.distance > 0.5:
             stop()
             time.sleep(1)  # Wait for 1 second to provide buffer
             self.turning = False
