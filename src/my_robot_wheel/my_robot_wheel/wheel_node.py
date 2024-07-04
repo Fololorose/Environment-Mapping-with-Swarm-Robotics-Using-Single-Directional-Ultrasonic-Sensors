@@ -85,13 +85,17 @@ class WheelNode(Node):
             turnLeft()    # Perform turn left action
             time.sleep(1)  # Wait for 1 second to provide buffer
         
+<<<<<<< HEAD
         # If the robot is turning, check if the distance is greater than 100 cm to stop turning
+=======
+        # If the robot is turning, check if the distance is greater than 50 cm to stop turning
+>>>>>>> 7d349f8 (automoving updated)
         elif self.turning and self.distance > 0.5:
             stop()
             time.sleep(1)  # Wait for 1 second to provide buffer
             self.turning = False
 
-        # Move forward if distance is greater than 15 cm and not in turning mode
+        # Move forward if distance is greater than 50 cm and not in turning mode
         if not self.turning:
             forward()
             time.sleep(1)  # Wait for 1 second to provide buffer
