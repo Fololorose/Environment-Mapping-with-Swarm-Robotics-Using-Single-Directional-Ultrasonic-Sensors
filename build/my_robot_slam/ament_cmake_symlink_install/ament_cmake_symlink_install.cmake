@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "launch" "config" "description" "DESTINATION" "share/my_robot_slam")
-ament_cmake_symlink_install_directory("/home/yuheng/ros2_ws/src/my_robot_slam" DIRECTORY "launch" "config" "description" "DESTINATION" "share/my_robot_slam")
+# install(DIRECTORY "config" "description" "launch" "DESTINATION" "share/my_robot_slam")
+ament_cmake_symlink_install_directory("/home/yuheng/ros2_ws/src/my_robot_slam" DIRECTORY "config" "description" "launch" "DESTINATION" "share/my_robot_slam")
 
 # install(FILES "/home/yuheng/ros2_ws/build/my_robot_slam/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_robot_slam" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_slam" FILES "/home/yuheng/ros2_ws/build/my_robot_slam/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_robot_slam" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

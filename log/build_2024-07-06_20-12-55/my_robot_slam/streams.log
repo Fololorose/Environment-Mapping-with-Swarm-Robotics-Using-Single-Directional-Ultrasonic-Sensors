@@ -1,0 +1,25 @@
+[0.220s] Invoking command in '/home/yuheng/ros2_ws/build/my_robot_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yuheng/ros2_ws/install/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/yuheng/ros2_ws/build/my_robot_slam -- -j4 -l4
+[5.452s] Invoked command in '/home/yuheng/ros2_ws/build/my_robot_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yuheng/ros2_ws/install/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/yuheng/ros2_ws/build/my_robot_slam -- -j4 -l4
+[5.718s] Invoking command in '/home/yuheng/ros2_ws/build/my_robot_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yuheng/ros2_ws/install/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/yuheng/ros2_ws/build/my_robot_slam
+[5.805s] -- Install configuration: ""
+[5.805s] -- Execute custom install script
+[5.820s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/lib/my_robot_slam/static_transform_publisher.py
+[5.836s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/config/slam_toolbox_params.yaml
+[5.839s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/description/my_robot.urdf.xacro
+[5.860s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/launch/slam_with_urdf_async.launch.py
+[5.868s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/ament_index/resource_index/package_run_dependencies/my_robot_slam
+[5.872s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/ament_index/resource_index/parent_prefix_path/my_robot_slam
+[5.879s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/environment/ament_prefix_path.sh
+[5.884s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/environment/ament_prefix_path.dsv
+[5.891s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/environment/path.sh
+[5.897s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/environment/path.dsv
+[5.901s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/local_setup.bash
+[5.905s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/local_setup.sh
+[5.918s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/local_setup.zsh
+[5.926s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/local_setup.dsv
+[5.932s] -- Symlinking: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/package.dsv
+[5.962s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/ament_index/resource_index/packages/my_robot_slam
+[5.970s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/cmake/my_robot_slamConfig.cmake
+[5.972s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/cmake/my_robot_slamConfig-version.cmake
+[5.973s] -- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/package.xml
+[5.983s] Invoked command in '/home/yuheng/ros2_ws/build/my_robot_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yuheng/ros2_ws/install/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/yuheng/ros2_ws/build/my_robot_slam

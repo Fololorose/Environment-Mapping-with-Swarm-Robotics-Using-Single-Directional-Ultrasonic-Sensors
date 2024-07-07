@@ -8,10 +8,19 @@ from launch.substitutions import Command
 
 def generate_launch_description():
     package_name = 'my_robot_slam'
+    
+    # Path to URDF
     xacro_file = os.path.join(
         get_package_share_directory(package_name),
         'description',
         'my_robot.urdf.xacro'
+    )
+    
+    # Path to SLAM Toolbox parameters
+    params_file = os.path.join(
+        get_package_share_directory(package_name),
+        'config',
+        'slam_toolbox_params.yaml'
     )
     
     return LaunchDescription([
@@ -24,17 +33,14 @@ def generate_launch_description():
         ),
         Node(
             package='slam_toolbox',
-            executable='sync_slam_toolbox_node',
+            executable='async_slam_toolbox_node',
             name='slam_toolbox',
             output='screen',
-            parameters=[os.path.join(
-                get_package_share_directory(package_name),
-                'config',
-                'slam_toolbox_params.yaml'
-            )],
+            parameters=[params_file],
             remappings=[
-                ('scan', '/my_robot/laser_scan/center'),
+                ('scan', '/scan'),
                 ('odom', 'odom'),
+                ('base_link', 'base_link'),
                 ('map', 'map')
             ]
         )

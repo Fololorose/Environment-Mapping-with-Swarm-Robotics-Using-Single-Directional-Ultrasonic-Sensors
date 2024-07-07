@@ -20,6 +20,8 @@ find_package(ament_cmake REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(slam_toolbox REQUIRED)
 find_package(robot_state_publisher REQUIRED)
+find_package(tf2_ros REQUIRED) 
+find_package(geometry_msgs REQUIRED) 
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -33,7 +35,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(DIRECTORY launch config description
+install(DIRECTORY config description launch
   DESTINATION share/${PROJECT_NAME}
 )
 

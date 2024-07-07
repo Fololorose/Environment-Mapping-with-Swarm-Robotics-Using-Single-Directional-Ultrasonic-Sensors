@@ -1,0 +1,20 @@
+[8.681s] Invoking command in '/home/yuheng/ros2_ws/build/my_robot_ultrasonic': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build --no-deps symlink_data
+[10.939s] running develop
+[10.944s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[10.949s]   warnings.warn(
+[12.626s] running egg_info
+[12.627s] writing my_robot_ultrasonic.egg-info/PKG-INFO
+[12.628s] writing dependency_links to my_robot_ultrasonic.egg-info/dependency_links.txt
+[12.628s] writing entry points to my_robot_ultrasonic.egg-info/entry_points.txt
+[12.636s] writing requirements to my_robot_ultrasonic.egg-info/requires.txt
+[12.637s] writing top-level names to my_robot_ultrasonic.egg-info/top_level.txt
+[12.648s] reading manifest file 'my_robot_ultrasonic.egg-info/SOURCES.txt'
+[12.654s] writing manifest file 'my_robot_ultrasonic.egg-info/SOURCES.txt'
+[12.662s] running build_ext
+[12.668s] Creating /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my-robot-ultrasonic.egg-link (link to .)
+[12.673s] Installing ultrasonic_node script to /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/my_robot_ultrasonic
+[12.675s] Installing ultrasonic_to_laserscan_node script to /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/my_robot_ultrasonic
+[12.681s] 
+[12.693s] Installed /home/yuheng/ros2_ws/build/my_robot_ultrasonic
+[12.705s] running symlink_data
+[12.956s] Invoked command in '/home/yuheng/ros2_ws/build/my_robot_ultrasonic' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_ultrasonic/build --no-deps symlink_data

@@ -11,19 +11,19 @@ class UltrasonicToLaserScanNode(Node):
 
         # Create subscribers for each Range topic
         self.left_range_subscriber_ = self.create_subscription(
-            Range, "/my_robot/range/left", self.range_callback, 10)
+            Range, "/my_robot/range/left", self.range_callback, 100)
         self.center_range_subscriber_ = self.create_subscription(
-            Range, "/my_robot/range/center", self.range_callback, 10)
+            Range, "/my_robot/range/center", self.range_callback, 100)
         self.right_range_subscriber_ = self.create_subscription(
-            Range, "/my_robot/range/right", self.range_callback, 10)
+            Range, "/my_robot/range/right", self.range_callback, 100)
         
         # Create publishers for each LaserScan topic
         self.left_laserscan_publisher = self.create_publisher(
-            LaserScan, "/my_robot/laser_scan/left", 10)
+            LaserScan, "/my_robot/laser_scan/left", 100)
         self.center_laserscan_publisher = self.create_publisher(
-            LaserScan, "/my_robot/laser_scan/center", 10)
+            LaserScan, "/scan", 100)
         self.right_laserscan_publisher = self.create_publisher(
-            LaserScan, "/my_robot/laser_scan/right", 10)
+            LaserScan, "/my_robot/laser_scan/right", 100)
         
         # Initialise dictionaries to store the range readings for each sensor
         self.range_dict = {

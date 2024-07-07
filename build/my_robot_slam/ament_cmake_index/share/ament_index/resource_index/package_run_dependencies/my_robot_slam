@@ -1,1 +1,1 @@
-rclpy;slam_toolbox;robot_state_publisher;ament_lint_auto;ament_lint_common
+rclpy;slam_toolbox;robot_state_publisher;xacro;ament_lint_auto;ament_lint_common
