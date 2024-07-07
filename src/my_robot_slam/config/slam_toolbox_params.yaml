@@ -1,6 +1,8 @@
 async_slam_toolbox_node:
   ros__parameters:
     slam_toolbox:
+      transform_timeout: 0.5 
+      tf_cache_time: 10.0 
       use_sim_time: false     # Set to true if using simulated time
       mode: mapping           # SLAM mode (mapping or localization)
       odom_frame: "odom"      # Frame for odometry data

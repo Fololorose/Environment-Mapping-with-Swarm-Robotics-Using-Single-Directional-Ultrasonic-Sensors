@@ -59,7 +59,7 @@ class UltrasonicToLaserScanNode(Node):
             self.range_dict[frame_id].append(range_in_m)
         
             # Ensure the list does not exceed 360 readings
-            if len(self.range_dict[frame_id]) > 360:
+            if len(self.range_dict[frame_id]) > 3:
                 self.range_dict[frame_id].pop(0)  # Remove the oldest reading
             
             # Create and publish the LaserScan message
@@ -87,7 +87,7 @@ class UltrasonicToLaserScanNode(Node):
     def range_to_laserscan(self, frame_id: str) -> LaserScan:
         scan_msg = LaserScan()
         scan_msg.header.stamp = self.get_clock().now().to_msg()  # Set timestamp
-        scan_msg.header.frame_id = "ultrasonic_frame"  # Use a common frame_id for all LaserScan messages
+        scan_msg.header.frame_id = "laser"  # Use a common frame_id for all LaserScan messages
         scan_msg.angle_min = -np.pi  # -180 degrees in radians
         scan_msg.angle_max = np.pi   # 180 degrees in radians
         scan_msg.angle_increment = np.pi / 180  # 1 degree resolution in radians

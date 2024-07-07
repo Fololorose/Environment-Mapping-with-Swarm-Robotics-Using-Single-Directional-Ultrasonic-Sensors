@@ -1,3 +1,4 @@
 [console_scripts]
+static_state_publisher = my_robot_wheel.static_state_publisher:main
 wheel_node = my_robot_wheel.wheel_node:main
 
