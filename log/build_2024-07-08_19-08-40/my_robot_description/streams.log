@@ -1,0 +1,16 @@
+[0.176s] Invoking command in '/home/yuheng/ros2_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yuheng/ros2_ws/install/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/yuheng/ros2_ws/src/my_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yuheng/ros2_ws/install/my_robot_description
+[0.276s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.166s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.219s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.689s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:66 (message):
+[1.690s]   ament_python_install_package() the Python package folder
+[1.692s]   '/home/yuheng/ros2_ws/src/my_robot_description/my_robot_description'
+[1.693s]   doesn't contain an '__init__.py' file
+[1.695s] Call Stack (most recent call first):
+[1.697s]   /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[1.698s]   CMakeLists.txt:26 (ament_python_install_package)
+[1.700s] 
+[1.702s] [0m
+[1.704s] -- Configuring incomplete, errors occurred!
+[1.708s] See also "/home/yuheng/ros2_ws/build/my_robot_description/CMakeFiles/CMakeOutput.log".
+[2.572s] Invoked command in '/home/yuheng/ros2_ws/build/my_robot_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yuheng/ros2_ws/install/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/yuheng/ros2_ws/src/my_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yuheng/ros2_ws/install/my_robot_description

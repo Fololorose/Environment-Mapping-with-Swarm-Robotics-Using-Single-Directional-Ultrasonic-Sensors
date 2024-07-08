@@ -1,0 +1,3 @@
+[console_scripts]
+robot_state_publisher = my_robot_state.robot_state_publisher:main
+

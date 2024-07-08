@@ -1,0 +1,20 @@
+[6.118s] Invoking command in '/home/yuheng/ros2_ws/build/my_robot_wheel': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_wheel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_wheel/build --no-deps symlink_data
+[7.956s] running develop
+[7.958s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[7.958s]   warnings.warn(
+[8.969s] running egg_info
+[8.970s] writing my_robot_wheel.egg-info/PKG-INFO
+[8.977s] writing dependency_links to my_robot_wheel.egg-info/dependency_links.txt
+[8.977s] writing entry points to my_robot_wheel.egg-info/entry_points.txt
+[8.978s] writing requirements to my_robot_wheel.egg-info/requires.txt
+[8.978s] writing top-level names to my_robot_wheel.egg-info/top_level.txt
+[8.985s] reading manifest file 'my_robot_wheel.egg-info/SOURCES.txt'
+[8.995s] writing manifest file 'my_robot_wheel.egg-info/SOURCES.txt'
+[8.998s] running build_ext
+[8.999s] Creating /home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages/my-robot-wheel.egg-link (link to .)
+[9.004s] Installing static_state_publisher script to /home/yuheng/ros2_ws/install/my_robot_wheel/lib/my_robot_wheel
+[9.005s] Installing wheel_node script to /home/yuheng/ros2_ws/install/my_robot_wheel/lib/my_robot_wheel
+[9.007s] 
+[9.008s] Installed /home/yuheng/ros2_ws/build/my_robot_wheel
+[9.009s] running symlink_data
+[9.153s] Invoked command in '/home/yuheng/ros2_ws/build/my_robot_wheel' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_wheel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_wheel/build --no-deps symlink_data

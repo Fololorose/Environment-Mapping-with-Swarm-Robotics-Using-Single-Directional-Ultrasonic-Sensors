@@ -8,7 +8,6 @@ from tf2_ros import TransformBroadcaster, StaticTransformBroadcaster
 class StaticStatePublisher(Node):
 
     def __init__(self):
-        rclpy.init()
         super().__init__('static_state_publisher')
 
         qos_profile = QoSProfile(depth=100)

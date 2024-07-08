@@ -1,0 +1,154 @@
+[0.000000] (-) TimerEvent: {}
+[0.001888] (my_robot_slam) JobQueued: {'identifier': 'my_robot_slam', 'dependencies': OrderedDict()}
+[0.002521] (my_robot_ultrasonic) JobQueued: {'identifier': 'my_robot_ultrasonic', 'dependencies': OrderedDict()}
+[0.003118] (my_robot_wheel) JobQueued: {'identifier': 'my_robot_wheel', 'dependencies': OrderedDict()}
+[0.003325] (my_robot_slam) JobStarted: {'identifier': 'my_robot_slam'}
+[0.043674] (my_robot_ultrasonic) JobStarted: {'identifier': 'my_robot_ultrasonic'}
+[0.077160] (my_robot_wheel) JobStarted: {'identifier': 'my_robot_wheel'}
+[0.098903] (-) TimerEvent: {}
+[0.114130] (my_robot_slam) JobProgress: {'identifier': 'my_robot_slam', 'progress': 'cmake'}
+[0.121617] (my_robot_slam) JobProgress: {'identifier': 'my_robot_slam', 'progress': 'build'}
+[0.125463] (my_robot_slam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yuheng/ros2_ws/build/my_robot_slam', '--', '-j4', '-l4'], 'cwd': '/home/yuheng/ros2_ws/build/my_robot_slam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yuheng'), ('SSH_CLIENT', '192.168.0.171 60326 22'), ('LC_TIME', 'ms_MY.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yuheng'), ('OLDPWD', '/home/yuheng'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ms_MY.UTF-8'), ('LC_CTYPE', 'UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/yuheng/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yuheng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ms_MY.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ms_MY.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/yuheng/ros2_ws/install/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_slam:/home/yuheng/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ms_MY.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ms_MY.UTF-8'), ('LC_IDENTIFICATION', 'ms_MY.UTF-8'), ('PWD', '/home/yuheng/ros2_ws/build/my_robot_slam'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.171 60326 192.168.0.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yuheng/ros2_ws/build/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages:/home/yuheng/ros2_ws/build/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:/home/yuheng/ros2_ws/build/my_robot_controller:/home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ms_MY.UTF-8'), ('LC_PAPER', 'ms_MY.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yuheng/ros2_ws/install/my_robot_slam:/home/yuheng/ros2_ws/install/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[0.199098] (-) TimerEvent: {}
+[0.299958] (-) TimerEvent: {}
+[0.401445] (-) TimerEvent: {}
+[0.502235] (-) TimerEvent: {}
+[0.603212] (-) TimerEvent: {}
+[0.704063] (-) TimerEvent: {}
+[0.804856] (-) TimerEvent: {}
+[0.905596] (-) TimerEvent: {}
+[1.006329] (-) TimerEvent: {}
+[1.107038] (-) TimerEvent: {}
+[1.207801] (-) TimerEvent: {}
+[1.308550] (-) TimerEvent: {}
+[1.409430] (-) TimerEvent: {}
+[1.510360] (-) TimerEvent: {}
+[1.611197] (-) TimerEvent: {}
+[1.712011] (-) TimerEvent: {}
+[1.812804] (-) TimerEvent: {}
+[1.913552] (-) TimerEvent: {}
+[2.014297] (-) TimerEvent: {}
+[2.115094] (-) TimerEvent: {}
+[2.215873] (-) TimerEvent: {}
+[2.316712] (-) TimerEvent: {}
+[2.417484] (-) TimerEvent: {}
+[2.518362] (-) TimerEvent: {}
+[2.619600] (-) TimerEvent: {}
+[2.720749] (-) TimerEvent: {}
+[2.735527] (my_robot_slam) CommandEnded: {'returncode': 0}
+[2.820947] (-) TimerEvent: {}
+[2.870049] (my_robot_slam) JobProgress: {'identifier': 'my_robot_slam', 'progress': 'install'}
+[2.917128] (my_robot_slam) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yuheng/ros2_ws/build/my_robot_slam'], 'cwd': '/home/yuheng/ros2_ws/build/my_robot_slam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yuheng'), ('SSH_CLIENT', '192.168.0.171 60326 22'), ('LC_TIME', 'ms_MY.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/yuheng'), ('OLDPWD', '/home/yuheng'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ms_MY.UTF-8'), ('LC_CTYPE', 'UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/yuheng/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yuheng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ms_MY.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ms_MY.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/yuheng/ros2_ws/install/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_slam:/home/yuheng/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ms_MY.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ms_MY.UTF-8'), ('LC_IDENTIFICATION', 'ms_MY.UTF-8'), ('PWD', '/home/yuheng/ros2_ws/build/my_robot_slam'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.171 60326 192.168.0.108 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yuheng/ros2_ws/build/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages:/home/yuheng/ros2_ws/build/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:/home/yuheng/ros2_ws/build/my_robot_controller:/home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ms_MY.UTF-8'), ('LC_PAPER', 'ms_MY.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yuheng/ros2_ws/install/my_robot_slam:/home/yuheng/ros2_ws/install/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[2.924289] (-) TimerEvent: {}
+[2.955734] (my_robot_slam) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.961937] (my_robot_slam) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.971774] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/config/slam_toolbox_params.yaml\n'}
+[2.975630] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/description/my_robot.urdf.xacro\n'}
+[2.979086] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/launch/online_async.launch.py\n'}
+[2.982300] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/ament_index/resource_index/package_run_dependencies/my_robot_slam\n'}
+[2.985869] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/ament_index/resource_index/parent_prefix_path/my_robot_slam\n'}
+[2.988766] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/environment/ament_prefix_path.sh\n'}
+[2.992328] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/environment/ament_prefix_path.dsv\n'}
+[2.995675] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/environment/path.sh\n'}
+[2.998768] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/environment/path.dsv\n'}
+[3.002931] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/local_setup.bash\n'}
+[3.005838] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/local_setup.sh\n'}
+[3.008270] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/local_setup.zsh\n'}
+[3.010992] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/local_setup.dsv\n'}
+[3.013000] (my_robot_slam) StdoutLine: {'line': b'-- Symlinking: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/package.dsv\n'}
+[3.024416] (-) TimerEvent: {}
+[3.058904] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/ament_index/resource_index/packages/my_robot_slam\n'}
+[3.062339] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/cmake/my_robot_slamConfig.cmake\n'}
+[3.066136] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/cmake/my_robot_slamConfig-version.cmake\n'}
+[3.069690] (my_robot_slam) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yuheng/ros2_ws/install/my_robot_slam/share/my_robot_slam/package.xml\n'}
+[3.073870] (my_robot_slam) CommandEnded: {'returncode': 0}
+[3.124910] (-) TimerEvent: {}
+[3.231473] (-) TimerEvent: {}
+[3.334193] (-) TimerEvent: {}
+[3.378237] (my_robot_slam) JobEnded: {'identifier': 'my_robot_slam', 'rc': 0}
+[3.434421] (-) TimerEvent: {}
+[3.535206] (-) TimerEvent: {}
+[3.636785] (-) TimerEvent: {}
+[3.738108] (-) TimerEvent: {}
+[3.839526] (-) TimerEvent: {}
+[3.940882] (-) TimerEvent: {}
+[4.041660] (-) TimerEvent: {}
+[4.142486] (-) TimerEvent: {}
+[4.243435] (-) TimerEvent: {}
+[4.344798] (-) TimerEvent: {}
+[4.447675] (-) TimerEvent: {}
+[4.549263] (-) TimerEvent: {}
+[4.650930] (-) TimerEvent: {}
+[4.755762] (-) TimerEvent: {}
+[4.798158] (my_robot_wheel) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yuheng/ros2_ws/build/my_robot_wheel/build', '--no-deps', 'symlink_data'], 'cwd': '/home/yuheng/ros2_ws/build/my_robot_wheel', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'yuheng', 'SSH_CLIENT': '192.168.0.171 60326 22', 'LC_TIME': 'ms_MY.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/yuheng', 'OLDPWD': '/home/yuheng', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ms_MY.UTF-8', 'LC_CTYPE': 'UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/yuheng/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'yuheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/yuheng/ros2_ws/install/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_slam:/home/yuheng/ros2_ws/install/my_robot_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'PWD': '/home/yuheng/ros2_ws/build/my_robot_wheel', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.171 60326 192.168.0.108 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yuheng/ros2_ws/build/my_robot_wheel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages:/home/yuheng/ros2_ws/build/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages:/home/yuheng/ros2_ws/build/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:/home/yuheng/ros2_ws/build/my_robot_controller:/home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/yuheng/ros2_ws/install/my_robot_slam'}, 'shell': False}
+[4.816672] (my_robot_ultrasonic) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/yuheng/ros2_ws/build/my_robot_ultrasonic/build', '--no-deps', 'symlink_data'], 'cwd': '/home/yuheng/ros2_ws/build/my_robot_ultrasonic', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'yuheng', 'SSH_CLIENT': '192.168.0.171 60326 22', 'LC_TIME': 'ms_MY.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/yuheng', 'OLDPWD': '/home/yuheng', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ms_MY.UTF-8', 'LC_CTYPE': 'UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/yuheng/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'yuheng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ms_MY.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ms_MY.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/yuheng/ros2_ws/install/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_slam:/home/yuheng/ros2_ws/install/my_robot_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ms_MY.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ms_MY.UTF-8', 'LC_IDENTIFICATION': 'ms_MY.UTF-8', 'PWD': '/home/yuheng/ros2_ws/build/my_robot_ultrasonic', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.171 60326 192.168.0.108 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yuheng/ros2_ws/build/my_robot_ultrasonic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:/home/yuheng/ros2_ws/build/my_robot_wheel:/home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages:/home/yuheng/ros2_ws/build/my_robot_ultrasonic:/home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages:/home/yuheng/ros2_ws/build/my_robot_controller:/home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ms_MY.UTF-8', 'LC_PAPER': 'ms_MY.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/yuheng/ros2_ws/install/my_robot_slam'}, 'shell': False}
+[4.855903] (-) TimerEvent: {}
+[4.957683] (-) TimerEvent: {}
+[5.059196] (-) TimerEvent: {}
+[5.160448] (-) TimerEvent: {}
+[5.261395] (-) TimerEvent: {}
+[5.362486] (-) TimerEvent: {}
+[5.463360] (-) TimerEvent: {}
+[5.564298] (-) TimerEvent: {}
+[5.665110] (-) TimerEvent: {}
+[5.765959] (-) TimerEvent: {}
+[5.867133] (-) TimerEvent: {}
+[5.970258] (-) TimerEvent: {}
+[6.072412] (-) TimerEvent: {}
+[6.175957] (-) TimerEvent: {}
+[6.278185] (-) TimerEvent: {}
+[6.382360] (-) TimerEvent: {}
+[6.397150] (my_robot_ultrasonic) StdoutLine: {'line': b'running develop\n'}
+[6.402732] (my_robot_ultrasonic) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[6.403581] (my_robot_ultrasonic) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.409089] (my_robot_wheel) StdoutLine: {'line': b'running develop\n'}
+[6.411017] (my_robot_wheel) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[6.411928] (my_robot_wheel) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.482580] (-) TimerEvent: {}
+[6.588049] (-) TimerEvent: {}
+[6.689685] (-) TimerEvent: {}
+[6.791068] (-) TimerEvent: {}
+[6.892385] (-) TimerEvent: {}
+[6.993658] (-) TimerEvent: {}
+[7.095525] (-) TimerEvent: {}
+[7.197237] (-) TimerEvent: {}
+[7.298603] (-) TimerEvent: {}
+[7.369573] (my_robot_ultrasonic) StdoutLine: {'line': b'running egg_info\n'}
+[7.370534] (my_robot_ultrasonic) StdoutLine: {'line': b'writing my_robot_ultrasonic.egg-info/PKG-INFO\n'}
+[7.371956] (my_robot_ultrasonic) StdoutLine: {'line': b'writing dependency_links to my_robot_ultrasonic.egg-info/dependency_links.txt\n'}
+[7.373496] (my_robot_ultrasonic) StdoutLine: {'line': b'writing entry points to my_robot_ultrasonic.egg-info/entry_points.txt\n'}
+[7.374668] (my_robot_ultrasonic) StdoutLine: {'line': b'writing requirements to my_robot_ultrasonic.egg-info/requires.txt\n'}
+[7.376356] (my_robot_wheel) StdoutLine: {'line': b'running egg_info\n'}
+[7.377789] (my_robot_ultrasonic) StdoutLine: {'line': b'writing top-level names to my_robot_ultrasonic.egg-info/top_level.txt\n'}
+[7.378778] (my_robot_wheel) StdoutLine: {'line': b'writing my_robot_wheel.egg-info/PKG-INFO\n'}
+[7.381089] (my_robot_wheel) StdoutLine: {'line': b'writing dependency_links to my_robot_wheel.egg-info/dependency_links.txt\n'}
+[7.381785] (my_robot_wheel) StdoutLine: {'line': b'writing entry points to my_robot_wheel.egg-info/entry_points.txt\n'}
+[7.382318] (my_robot_wheel) StdoutLine: {'line': b'writing requirements to my_robot_wheel.egg-info/requires.txt\n'}
+[7.382823] (my_robot_wheel) StdoutLine: {'line': b'writing top-level names to my_robot_wheel.egg-info/top_level.txt\n'}
+[7.385090] (my_robot_ultrasonic) StdoutLine: {'line': b"reading manifest file 'my_robot_ultrasonic.egg-info/SOURCES.txt'\n"}
+[7.390037] (my_robot_wheel) StdoutLine: {'line': b"reading manifest file 'my_robot_wheel.egg-info/SOURCES.txt'\n"}
+[7.390789] (my_robot_ultrasonic) StdoutLine: {'line': b"writing manifest file 'my_robot_ultrasonic.egg-info/SOURCES.txt'\n"}
+[7.394602] (my_robot_wheel) StdoutLine: {'line': b"writing manifest file 'my_robot_wheel.egg-info/SOURCES.txt'\n"}
+[7.397421] (my_robot_ultrasonic) StdoutLine: {'line': b'running build_ext\n'}
+[7.398732] (-) TimerEvent: {}
+[7.400302] (my_robot_ultrasonic) StdoutLine: {'line': b'Creating /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/python3.10/site-packages/my-robot-ultrasonic.egg-link (link to .)\n'}
+[7.402203] (my_robot_wheel) StdoutLine: {'line': b'running build_ext\n'}
+[7.406986] (my_robot_wheel) StdoutLine: {'line': b'Creating /home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages/my-robot-wheel.egg-link (link to .)\n'}
+[7.409774] (my_robot_ultrasonic) StdoutLine: {'line': b'Installing ultrasonic_node script to /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/my_robot_ultrasonic\n'}
+[7.416710] (my_robot_ultrasonic) StdoutLine: {'line': b'Installing ultrasonic_to_laserscan_node script to /home/yuheng/ros2_ws/install/my_robot_ultrasonic/lib/my_robot_ultrasonic\n'}
+[7.418344] (my_robot_ultrasonic) StdoutLine: {'line': b'\n'}
+[7.420830] (my_robot_ultrasonic) StdoutLine: {'line': b'Installed /home/yuheng/ros2_ws/build/my_robot_ultrasonic\n'}
+[7.424091] (my_robot_ultrasonic) StdoutLine: {'line': b'running symlink_data\n'}
+[7.431008] (my_robot_wheel) StdoutLine: {'line': b'Installing static_state_publisher script to /home/yuheng/ros2_ws/install/my_robot_wheel/lib/my_robot_wheel\n'}
+[7.437581] (my_robot_wheel) StdoutLine: {'line': b'Installing wheel_node script to /home/yuheng/ros2_ws/install/my_robot_wheel/lib/my_robot_wheel\n'}
+[7.440676] (my_robot_wheel) StdoutLine: {'line': b'\n'}
+[7.444408] (my_robot_wheel) StdoutLine: {'line': b'Installed /home/yuheng/ros2_ws/build/my_robot_wheel\n'}
+[7.447286] (my_robot_wheel) StdoutLine: {'line': b'running symlink_data\n'}
+[7.499291] (-) TimerEvent: {}
+[7.602439] (-) TimerEvent: {}
+[7.648734] (my_robot_ultrasonic) CommandEnded: {'returncode': 0}
+[7.691103] (my_robot_ultrasonic) JobEnded: {'identifier': 'my_robot_ultrasonic', 'rc': 0}
+[7.696258] (my_robot_wheel) CommandEnded: {'returncode': 0}
+[7.703179] (-) TimerEvent: {}
+[7.736631] (my_robot_wheel) JobEnded: {'identifier': 'my_robot_wheel', 'rc': 0}
+[7.740016] (-) EventReactorShutdown: {}

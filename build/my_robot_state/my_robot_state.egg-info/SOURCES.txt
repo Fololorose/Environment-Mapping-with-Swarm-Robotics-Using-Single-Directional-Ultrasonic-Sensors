@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+my_robot_state/__init__.py
+my_robot_state/robot_state_publisher.py
+my_robot_state.egg-info/PKG-INFO
+my_robot_state.egg-info/SOURCES.txt
+my_robot_state.egg-info/dependency_links.txt
+my_robot_state.egg-info/entry_points.txt
+my_robot_state.egg-info/requires.txt
+my_robot_state.egg-info/top_level.txt
+my_robot_state.egg-info/zip-safe
+resource/my_robot_state
