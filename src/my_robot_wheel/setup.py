@@ -20,8 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "wheel_node = my_robot_wheel.wheel_node:main",
-            "static_state_publisher = my_robot_wheel.static_state_publisher:main",
+            "wheel_node = my_robot_wheel.wheel_node:main"
         ],
     },
 )

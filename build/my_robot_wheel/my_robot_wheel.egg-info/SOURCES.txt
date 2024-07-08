@@ -10,7 +10,6 @@ setup.py
 ../../build/my_robot_wheel/my_robot_wheel.egg-info/zip-safe
 my_robot_wheel/PCA9685.py
 my_robot_wheel/__init__.py
-my_robot_wheel/static_state_publisher.py
 my_robot_wheel/wheel_node.py
 my_robot_wheel.egg-info/PKG-INFO
 my_robot_wheel.egg-info/SOURCES.txt
