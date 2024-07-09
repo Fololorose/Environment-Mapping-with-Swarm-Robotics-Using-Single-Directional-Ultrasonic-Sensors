@@ -310,8 +310,47 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/my_robot_description/environment")
-ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/my_robot_description/environment")
+# install(DIRECTORY "description" "launch" "DESTINATION" "share/my_robot_description/")
+ament_cmake_symlink_install_directory("/home/yuheng/ros2_ws/src/my_robot_description" DIRECTORY "description" "launch" "DESTINATION" "share/my_robot_description/")
 
-# install(FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/my_robot_description/environment")
-ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/my_robot_description/environment")
+# install(FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_robot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_robot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+
+# install(FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/my_robot_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/my_robot_description" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/my_robot_description/environment")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/my_robot_description/environment")
+
+# install(FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/my_robot_description/environment")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/my_robot_description/environment")
+
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/my_robot_description/environment")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/my_robot_description/environment")
+
+# install(FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/my_robot_description/environment")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/my_robot_description/environment")
+
+# install(FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/my_robot_description")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/my_robot_description")
+
+# install(FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/my_robot_description")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/my_robot_description")
+
+# install(FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/my_robot_description")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/my_robot_description")
+
+# install(FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/my_robot_description")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/my_robot_description")
+
+# install(FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/my_robot_description")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/my_robot_description")
+
+# install(FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/packages/my_robot_description" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/packages/my_robot_description" "DESTINATION" "share/ament_index/resource_index/packages")
+
+# install(FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_core/my_robot_descriptionConfig.cmake" "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_core/my_robot_descriptionConfig-version.cmake" "DESTINATION" "share/my_robot_description/cmake")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_core/my_robot_descriptionConfig.cmake" "/home/yuheng/ros2_ws/build/my_robot_description/ament_cmake_core/my_robot_descriptionConfig-version.cmake" "DESTINATION" "share/my_robot_description/cmake")
+
+# install(FILES "/home/yuheng/ros2_ws/src/my_robot_description/package.xml" "DESTINATION" "share/my_robot_description")
+ament_cmake_symlink_install_files("/home/yuheng/ros2_ws/src/my_robot_description" FILES "/home/yuheng/ros2_ws/src/my_robot_description/package.xml" "DESTINATION" "share/my_robot_description")
