@@ -98,16 +98,16 @@ class WheelNode(Node):
 
 def main(args=None):
     rclpy.init(args=args) # Initialise the ROS client library
-    wheel_node = WheelNode() # Create an instance of the WheelNode
+    node = WheelNode() # Create an instance of the WheelNode
     try:
-        rclpy.spin(wheel_node) # Spin the node to keep it active and listening for messages
+        rclpy.spin(node) # Spin the node to keep it active and listening for messages
     except KeyboardInterrupt:
         pass # Handle the interruption 
     finally:
         stop() # Ensure the robot stops moving before shutdown the code
         rotateWheel()
-        wheel_node.destroy_node() # Clean up and destroy the node
+        node.destroy_node() # Clean up and destroy the node
         rclpy.shutdown() # Shutdown the ROS client library
 
 if __name__ == '__main__':
-    main()
+    main() # Execute the main function if this script is run directly

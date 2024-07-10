@@ -71,14 +71,14 @@ class UltrasonicNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)  # Initialise the ROS client library
-    ultrasonic_node = UltrasonicNode()  # Create an instance of the UltrasonicNode
+    node = UltrasonicNode()  # Create an instance of the UltrasonicNode
 
     try:
-        rclpy.spin(ultrasonic_node)  # Spin the node to keep it active and listening for messages
+        rclpy.spin(node)  # Spin the node to keep it active and listening for messages
     except KeyboardInterrupt:
         pass  # Handle the interruption 
     finally:
-        ultrasonic_node.destroy_node()  # Clean up and destroy the node
+        node.destroy_node()  # Clean up and destroy the node
         rclpy.shutdown()  # Shutdown the ROS client library
         GPIO.cleanup()  # Clean up GPIO pins
 
