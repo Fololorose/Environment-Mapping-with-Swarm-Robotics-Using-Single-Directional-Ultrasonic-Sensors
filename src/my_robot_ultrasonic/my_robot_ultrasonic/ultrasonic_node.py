@@ -23,9 +23,9 @@ class UltrasonicNode(Node):
         
         # Initialise the Ultrasonic sensors
         self.ultrasonics = [
-            {"sensor": Ultrasonic(gpio_trigger=4, gpio_echo=17), "frame_id": "left_ultrasonic_frame", "publisher": self.left_range_publisher_},
-            {"sensor": Ultrasonic(gpio_trigger=27, gpio_echo=22), "frame_id": "center_ultrasonic_frame", "publisher": self.center_range_publisher_},
-            {"sensor": Ultrasonic(gpio_trigger=6, gpio_echo=5), "frame_id": "right_ultrasonic_frame", "publisher": self.right_range_publisher_}
+            {"sensor": Ultrasonic(gpio_trigger=4, gpio_echo=17), "frame_id": "left_ultrasonic_frame", "publisher": self.left_range_publisher_, "distances":[]},
+            {"sensor": Ultrasonic(gpio_trigger=27, gpio_echo=22), "frame_id": "center_ultrasonic_frame", "publisher": self.center_range_publisher_, "distances":[]},
+            {"sensor": Ultrasonic(gpio_trigger=6, gpio_echo=5), "frame_id": "right_ultrasonic_frame", "publisher": self.right_range_publisher_, "distances":[]}
         ]
         
         # Log that the node has been started
@@ -37,17 +37,26 @@ class UltrasonicNode(Node):
         # Loop through each sensor, get the distance and publish the range
         for ultrasonic_info in self.ultrasonics:
             distance = ultrasonic_info["sensor"].get_range()
+            
+            # Use only the previous 5 points for SMA
+            if len(ultrasonic_info["distances"]) == 5:
+                ultrasonic_info["distances"].pop(0)
 
-            range_msg = self.create_range_message(distance, ultrasonic_info["frame_id"])
+            ultrasonic_info["distances"].append(distance)
+
+            # Calculate the SMA for the current point
+            sma_distance = sum(ultrasonic_info["distances"]) / len(ultrasonic_info["distances"])
+
+            range_msg = self.create_range_message(sma_distance, ultrasonic_info["frame_id"])
             ultrasonic_info["publisher"].publish(range_msg)
                     
-            # Store the distance in the distances dictionary
+            # Store the SMA distance in the distances dictionary
             if ultrasonic_info["frame_id"] == "left_ultrasonic_frame":
-                distances["left"] = distance
+                distances["left"] = sma_distance
             elif ultrasonic_info["frame_id"] == "center_ultrasonic_frame":
-                distances["center"] = distance
+                distances["center"] = sma_distance
             elif ultrasonic_info["frame_id"] == "right_ultrasonic_frame":
-                distances["right"] = distance
+                distances["right"] = sma_distance
 
         # Log all distances together
         left_distance = f"{distances['left']:.2f} cm"
@@ -63,7 +72,7 @@ class UltrasonicNode(Node):
         range_msg.header.stamp = self.get_clock().now().to_msg()  # Set the timestamp
         range_msg.header.frame_id = frame_id  # Frame ID of the sensor
         range_msg.radiation_type = Range.ULTRASOUND  # Specify the type of radiation (ultrasonic)
-        range_msg.field_of_view = 0.1  # Example value, adjust as necessary
+        range_msg.field_of_view = 0.1  # Adjust as necessary
         range_msg.min_range = self.ultrasonics[0]["sensor"]._range_min / 100.0  # Convert min range to meters
         range_msg.max_range = self.ultrasonics[0]["sensor"]._range_max / 100.0  # Convert max range to meters
         range_msg.range = distance / 100.0  # Convert distance to meters

@@ -1,0 +1,19 @@
+[4.076s] Invoking command in '/home/yuheng/ros2_ws/build/my_robot_wheel': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_wheel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_wheel/build --no-deps symlink_data
+[5.979s] running develop
+[5.981s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.981s]   warnings.warn(
+[6.907s] running egg_info
+[6.912s] writing my_robot_wheel.egg-info/PKG-INFO
+[6.912s] writing dependency_links to my_robot_wheel.egg-info/dependency_links.txt
+[6.914s] writing entry points to my_robot_wheel.egg-info/entry_points.txt
+[6.916s] writing requirements to my_robot_wheel.egg-info/requires.txt
+[6.917s] writing top-level names to my_robot_wheel.egg-info/top_level.txt
+[6.927s] reading manifest file 'my_robot_wheel.egg-info/SOURCES.txt'
+[6.935s] writing manifest file 'my_robot_wheel.egg-info/SOURCES.txt'
+[6.948s] running build_ext
+[6.949s] Creating /home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages/my-robot-wheel.egg-link (link to .)
+[6.954s] Installing wheel_node script to /home/yuheng/ros2_ws/install/my_robot_wheel/lib/my_robot_wheel
+[6.958s] 
+[6.959s] Installed /home/yuheng/ros2_ws/build/my_robot_wheel
+[6.963s] running symlink_data
+[7.176s] Invoked command in '/home/yuheng/ros2_ws/build/my_robot_wheel' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_wheel/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_wheel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_wheel/build --no-deps symlink_data

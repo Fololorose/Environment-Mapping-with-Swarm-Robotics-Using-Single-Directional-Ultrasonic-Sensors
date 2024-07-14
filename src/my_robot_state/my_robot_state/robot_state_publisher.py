@@ -108,21 +108,22 @@ class RobotStatePublisher(Node):
         self.command_timer = self.create_timer(1.0, self.issue_movement_command)
 
     def issue_movement_command(self):
-        if self.state == 'forward':
-            if self.step_count < 5:
-                self.move_forward()
-                self.step_count += 1
-            else:
-                self.step_count = 0
-                self.state = 'turn_left'
-        elif self.state == 'turn_left':
-            self.turn_left()
-            self.state = 'forward'
-            self.step_count = 0
+        self.move_forward()
+        # if self.state == 'forward':
+        #     if self.step_count < 5:
+        #         self.move_forward()
+        #         self.step_count += 1
+        #     else:
+        #         self.step_count = 0
+        #         self.state = 'turn_left'
+        # elif self.state == 'turn_left':
+        #     self.turn_left()
+        #     self.state = 'forward'
+        #     self.step_count = 0
 
     def move_forward(self):
-        self.current_x += 0.1 * math.cos(self.current_theta)
-        self.current_y += 0.1 * math.sin(self.current_theta)
+        self.current_x += 0.01 * math.cos(self.current_theta)
+        self.current_y += 0.01 * math.sin(self.current_theta)
         self.get_logger().info('Moving forward')
 
     def turn_left(self):
