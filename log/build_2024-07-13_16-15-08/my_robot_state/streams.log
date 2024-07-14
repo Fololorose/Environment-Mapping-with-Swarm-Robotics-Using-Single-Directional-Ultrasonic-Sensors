@@ -1,0 +1,19 @@
+[5.088s] Invoking command in '/home/yuheng/ros2_ws/build/my_robot_state': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_state/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_state/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_state/build --no-deps symlink_data
+[6.635s] running develop
+[6.642s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[6.644s]   warnings.warn(
+[8.029s] running egg_info
+[8.030s] writing my_robot_state.egg-info/PKG-INFO
+[8.035s] writing dependency_links to my_robot_state.egg-info/dependency_links.txt
+[8.043s] writing entry points to my_robot_state.egg-info/entry_points.txt
+[8.044s] writing requirements to my_robot_state.egg-info/requires.txt
+[8.054s] writing top-level names to my_robot_state.egg-info/top_level.txt
+[8.056s] reading manifest file 'my_robot_state.egg-info/SOURCES.txt'
+[8.060s] writing manifest file 'my_robot_state.egg-info/SOURCES.txt'
+[8.061s] running build_ext
+[8.069s] Creating /home/yuheng/ros2_ws/install/my_robot_state/lib/python3.10/site-packages/my-robot-state.egg-link (link to .)
+[8.071s] Installing robot_state_publisher script to /home/yuheng/ros2_ws/install/my_robot_state/lib/my_robot_state
+[8.082s] 
+[8.086s] Installed /home/yuheng/ros2_ws/build/my_robot_state
+[8.101s] running symlink_data
+[8.235s] Invoked command in '/home/yuheng/ros2_ws/build/my_robot_state' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_state/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_state/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_state/build --no-deps symlink_data
