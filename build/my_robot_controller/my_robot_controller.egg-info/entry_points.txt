@@ -1,3 +1,4 @@
 [console_scripts]
+keyboard_control = my_robot_controller.keyboard_control:main
 wheel_node = my_robot_controller.wheel_node:main
 

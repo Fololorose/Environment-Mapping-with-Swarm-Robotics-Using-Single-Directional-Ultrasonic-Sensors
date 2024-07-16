@@ -1,0 +1,20 @@
+[5.213s] Invoking command in '/home/yuheng/ros2_ws/build/my_robot_controller': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_controller/build --no-deps symlink_data
+[6.783s] running develop
+[6.785s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[6.786s]   warnings.warn(
+[8.026s] running egg_info
+[8.027s] writing my_robot_controller.egg-info/PKG-INFO
+[8.029s] writing dependency_links to my_robot_controller.egg-info/dependency_links.txt
+[8.030s] writing entry points to my_robot_controller.egg-info/entry_points.txt
+[8.032s] writing requirements to my_robot_controller.egg-info/requires.txt
+[8.033s] writing top-level names to my_robot_controller.egg-info/top_level.txt
+[8.042s] reading manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[8.048s] writing manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[8.059s] running build_ext
+[8.061s] Creating /home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my-robot-controller.egg-link (link to .)
+[8.066s] Installing keyboard_control script to /home/yuheng/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[8.069s] Installing wheel_node script to /home/yuheng/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[8.074s] 
+[8.078s] Installed /home/yuheng/ros2_ws/build/my_robot_controller
+[8.082s] running symlink_data
+[8.275s] Invoked command in '/home/yuheng/ros2_ws/build/my_robot_controller' returned '0': PYTHONPATH=/home/yuheng/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yuheng/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yuheng/ros2_ws/build/my_robot_controller/build --no-deps symlink_data
