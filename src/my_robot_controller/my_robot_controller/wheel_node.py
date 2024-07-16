@@ -67,28 +67,44 @@ class WheelNode(Node):
         # Create a publisher for the current action
         self.action_publisher = self.create_publisher(String, "/action", 10)
 
+        self.fixing_mode = False
+       
         # Timer to stop the robot if no command is received for a certain period
         self.timeout = 1.0  # 1 second timeout
         self.last_cmd_time = self.get_clock().now()
         self.timer = self.create_timer(0.1, self.check_timeout) 
         
     def cmd_callback(self, msg):
-        # Update the last command time
+        # Update the last command time when it's not in fixing mode
         self.last_cmd_time = self.get_clock().now()
-
+                
         # Perform the action based on the received command
-        if msg.data == "forward":
-            # forward()
-            self.publish_action("forward")
-        elif msg.data == "left":
-            # turnLeft()
-            self.publish_action("left")
-        elif msg.data == 'right':
-            # turnRight()
-            self.publish_action("right")
+        command = msg.data.lower()
+        if command == "enter fixing mode":
+            self.fixing_mode = True
+            self.get_logger().info("Entering fixing mode")
+        elif command == "exit fixing mode":
+            self.fixing_mode = False
+            self.get_logger().info("Exiting fixing mode")
         else:
-            stop()
-            self.publish_action("stop")
+            if not self.fixing_mode:
+                if command == "forward":
+                    # forward
+                    pass
+                elif command == "left":
+                    # turnLeft()
+                    pass
+                elif command == 'right':
+                    # turnRight()
+                    pass
+                else:
+                    stop()
+                
+                # Publish the action if not in fixing mode
+                action_msg = String()
+                action_msg.data = command
+                self.action_publisher.publish(action_msg)
+                self.get_logger().info(f'Action: {command}')
     
     def check_timeout(self):
         # Stop the robot if no command is received for the specified timeout
