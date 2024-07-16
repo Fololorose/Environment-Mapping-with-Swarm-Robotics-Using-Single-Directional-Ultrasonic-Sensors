@@ -63,7 +63,7 @@ class WheelNode(Node):
 
         # Create a subscriber for laser scan messages
         self.center_laserscan_subscriber = self.create_subscription(
-            LaserScan, '/my_robot/laser_scan/center', self.laserscan_callback, 10)
+            LaserScan, '/scan', self.laserscan_callback, 10)
 
         # Initialise distance variable
         self.distance = float('inf') 
