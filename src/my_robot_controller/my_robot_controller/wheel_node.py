@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-
 import time
 from .PCA9685 import PCA9685
 import rclpy
 from rclpy.node import Node
-from sensor_msgs.msg import LaserScan
+from std_msgs.msg import String
 
 # Servo configuration
 pwm = PCA9685(0x40)
@@ -38,13 +37,13 @@ def backward():
 def turnLeft():
     global pulse0, pulse1
     pulse0 = 1370
-    pulse1 = 1370
+    pulse1 = 0
     rotateWheel()
     print("Turn Left")
 
 def turnRight():
     global pulse0, pulse1
-    pulse0 = 1700
+    pulse0 = 0
     pulse1 = 1700
     rotateWheel()
     print("Turn Right")
@@ -61,40 +60,47 @@ class WheelNode(Node):
     def __init__(self):
         super().__init__('wheel_node')
 
-        # Create a subscriber for laser scan messages
-        self.center_laserscan_subscriber = self.create_subscription(
-            LaserScan, '/scan', self.laserscan_callback, 10)
+        # Create a subscriber for the keyboard control
+        self.cmd_subscriber = self.create_subscription(
+            String, "/cmd", self.cmd_callback, 10)
+        
+        # Create a publisher for the current action
+        self.action_publisher = self.create_publisher(String, "/action", 10)
 
-        # Initialise distance variable
-        self.distance = float('inf') 
+        # Timer to stop the robot if no command is received for a certain period
+        self.timeout = 1.0  # 1 second timeout
+        self.last_cmd_time = self.get_clock().now()
+        self.timer = self.create_timer(0.1, self.check_timeout) 
         
-        # Flag to check if the robot is in turning mode 
-        self.turning = False  
-        
-    def laserscan_callback(self, msg):
-        # Update the distance variable with the latest laser scan reading
-        if msg.ranges: # Check if ranges list is not empty
-            self.distance = msg.ranges[-1]  # Get the latest range value
-            print(msg.ranges)
-        
-        # Check if distance is less than 50 cm
-        if 0 < self.distance < 0.5 and not self.turning:  # ranges are in meters
-            self.turning = True
-            stop()
-            time.sleep(1)  # Wait for 1 second to provide buffer
-            turnLeft()    # Perform turn left action
-            time.sleep(1)  # Wait for 1 second to provide buffer
-        
-        # If the robot is turning, check if the distance is greater than 50 cm to stop turning
-        elif self.turning and self.distance > 0.5:
-            stop()
-            time.sleep(1)  # Wait for 1 second to provide buffer
-            self.turning = False
+    def cmd_callback(self, msg):
+        # Update the last command time
+        self.last_cmd_time = self.get_clock().now()
 
-        # Move forward if distance is greater than 50 cm and not in turning mode
-        if not self.turning:
-            forward()
-            time.sleep(1)  # Wait for 1 second to provide buffer
+        # Perform the action based on the received command
+        if msg.data == "forward":
+            # forward()
+            self.publish_action("forward")
+        elif msg.data == "left":
+            # turnLeft()
+            self.publish_action("left")
+        elif msg.data == 'right':
+            # turnRight()
+            self.publish_action("right")
+        else:
+            stop()
+            self.publish_action("stop")
+    
+    def check_timeout(self):
+        # Stop the robot if no command is received for the specified timeout
+        if (self.get_clock().now() - self.last_cmd_time).nanoseconds / 1e9 > self.timeout:
+            stop()
+            self.publish_action("stop")
+            
+    def publish_action(self, action):
+        msg = String()
+        msg.data = action
+        self.action_publisher.publish(msg)
+        self.get_logger().info(f'Action: {action}')
 
 def main(args=None):
     rclpy.init(args=args) # Initialise the ROS client library

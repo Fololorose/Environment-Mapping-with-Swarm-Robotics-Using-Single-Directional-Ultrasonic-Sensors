@@ -1,91 +1,16 @@
-# #!/usr/bin/env python3
-
-# import rclpy
-# from rclpy.node import Node
-# from rclpy.qos import QoSProfile
-# from geometry_msgs.msg import TransformStamped
-# from tf2_ros import TransformBroadcaster
-
-# class RobotStatePublisher(Node):
-
-#     def __init__(self):
-#         super().__init__('robot_state_publisher')
-
-#         # Create a TransformBroadcaster with QoSProfile
-#         qos_profile = QoSProfile(depth=100)  # Example QoS profile with a depth of 100
-#         self.broadcaster = TransformBroadcaster(self, qos=qos_profile)
-
-#         # Start timer for publishing transforms
-#         self.timer = self.create_timer(0.1, self.publish_transforms)
-
-#         self.get_logger().info('Robot State Publisher started')
-
-#     def publish_transforms(self):
-#         current_time = self.get_clock().now().to_msg()
-        
-#         map_to_odom = TransformStamped()
-#         map_to_odom.header.stamp = current_time
-#         map_to_odom.header.frame_id = 'map'
-#         map_to_odom.child_frame_id = 'odom'
-#         map_to_odom.transform.translation.x = 0.0
-#         map_to_odom.transform.translation.y = 0.0
-#         map_to_odom.transform.translation.z = 0.0
-#         map_to_odom.transform.rotation.x = 0.0
-#         map_to_odom.transform.rotation.y = 0.0
-#         map_to_odom.transform.rotation.z = 0.0
-#         map_to_odom.transform.rotation.w = 1.0
-
-#         odom_to_base_footprint = TransformStamped()
-#         odom_to_base_footprint.header.stamp = current_time
-#         odom_to_base_footprint.header.frame_id = 'odom'
-#         odom_to_base_footprint.child_frame_id = 'base_footprint'
-#         odom_to_base_footprint.transform.translation.x = 0.0
-#         odom_to_base_footprint.transform.translation.y = 0.0
-#         odom_to_base_footprint.transform.translation.z = 0.0
-#         odom_to_base_footprint.transform.rotation.x = 0.0
-#         odom_to_base_footprint.transform.rotation.y = 0.0
-#         odom_to_base_footprint.transform.rotation.z = 0.0
-#         odom_to_base_footprint.transform.rotation.w = 1.0
-
-#         base_footprint_to_base_link = TransformStamped()
-#         base_footprint_to_base_link.header.stamp = current_time
-#         base_footprint_to_base_link.header.frame_id = 'base_footprint'
-#         base_footprint_to_base_link.child_frame_id = 'base_link'
-#         base_footprint_to_base_link.transform.translation.x = 0.0
-#         base_footprint_to_base_link.transform.translation.y = 0.0
-#         base_footprint_to_base_link.transform.translation.z = 0.0
-#         base_footprint_to_base_link.transform.rotation.x = 0.0
-#         base_footprint_to_base_link.transform.rotation.y = 0.0
-#         base_footprint_to_base_link.transform.rotation.z = 0.0
-#         base_footprint_to_base_link.transform.rotation.w = 1.0
-
-#         # Publish transforms
-#         self.broadcaster.sendTransform(map_to_odom)
-#         self.broadcaster.sendTransform(odom_to_base_footprint)
-#         self.broadcaster.sendTransform(base_footprint_to_base_link)
-
-# def main(args=None):
-#     rclpy.init(args=args)
-#     node = RobotStatePublisher()
-#     rclpy.spin(node)
-#     rclpy.shutdown()
-
-# if __name__ == '__main__':
-#     main()
-
 #!/usr/bin/env python3
-
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
 from geometry_msgs.msg import TransformStamped
+from std_msgs.msg import String
 from tf2_ros import TransformBroadcaster
 import math
 
 class RobotStatePublisher(Node):
 
     def __init__(self):
-        super().__init__('robot_state_publisher')
+        super().__init__("robot_state_publisher")
 
         # Create a TransformBroadcaster with QoSProfile
         qos_profile = QoSProfile(depth=100)
@@ -99,44 +24,57 @@ class RobotStatePublisher(Node):
         self.current_y = 0.0
         self.current_theta = 0.0
 
-        # Movement sequence variables
-        self.step_count = 0
-        self.state = 'forward'
-        self.get_logger().info('Robot State Publisher started')
+        # Create a subscriber to receive the action
+        self.action_subscriber = self.create_subscription(
+            String, "/action", self.action_callback, 10)
+
+        self.get_logger().info("Robot State Publisher started")
 
         # Start a timer for issuing movement commands
-        self.command_timer = self.create_timer(1.0, self.issue_movement_command)
+        self.command_timer = self.create_timer(1.0, self.publish_transforms)
 
-    def issue_movement_command(self):
-        self.move_forward()
-        # if self.state == 'forward':
-        #     if self.step_count < 5:
-        #         self.move_forward()
-        #         self.step_count += 1
-        #     else:
-        #         self.step_count = 0
-        #         self.state = 'turn_left'
-        # elif self.state == 'turn_left':
-        #     self.turn_left()
-        #     self.state = 'forward'
-        #     self.step_count = 0
+    def action_callback(self, msg):
+        action = msg.data
+        if action == "forward":
+            self.move_forward()
+        elif action == "backward":
+            self.move_backward()
+        elif action == "left":
+            self.turn_left()
+        elif action == "right":
+            self.turn_right()
+        elif action == "stop":
+            # Handle stop action if needed
+            pass
+        else:
+            self.get_logger().warning(f"Unknown action received: {action}")
 
     def move_forward(self):
         self.current_x += 0.01 * math.cos(self.current_theta)
         self.current_y += 0.01 * math.sin(self.current_theta)
-        self.get_logger().info('Moving forward')
+        self.get_logger().info("Moving forward")
+        
+    def move_backward(self):
+        self.current_x -= 0.01 * math.cos(self.current_theta)
+        self.current_y -= 0.01 * math.sin(self.current_theta)
+        self.get_logger().info("Moving backward")
 
     def turn_left(self):
-        self.current_theta += math.pi / 2  # 90-degree turn
-        self.get_logger().info('Turning left')
+        self.current_theta += math.pi / 2 # 90-degree turn
+        self.get_logger().info("Turning left")
+        
+    def turn_right(self):
+        self.current_theta -= math.pi / 2 # 90-degree turn
+        self.get_logger().info("Turning right")
 
     def publish_transforms(self):
         current_time = self.get_clock().now().to_msg()
 
+        # Create transform from "map" to "odom"
         map_to_odom = TransformStamped()
         map_to_odom.header.stamp = current_time
-        map_to_odom.header.frame_id = 'map'
-        map_to_odom.child_frame_id = 'odom'
+        map_to_odom.header.frame_id = "map"
+        map_to_odom.child_frame_id = "odom"
         map_to_odom.transform.translation.x = 0.0
         map_to_odom.transform.translation.y = 0.0
         map_to_odom.transform.translation.z = 0.0
@@ -145,10 +83,11 @@ class RobotStatePublisher(Node):
         map_to_odom.transform.rotation.z = 0.0
         map_to_odom.transform.rotation.w = 1.0
 
+        # Create transform from "odom" to "base_footprint"
         odom_to_base_footprint = TransformStamped()
         odom_to_base_footprint.header.stamp = current_time
-        odom_to_base_footprint.header.frame_id = 'odom'
-        odom_to_base_footprint.child_frame_id = 'base_footprint'
+        odom_to_base_footprint.header.frame_id = "odom"
+        odom_to_base_footprint.child_frame_id = "base_footprint"
         odom_to_base_footprint.transform.translation.x = self.current_x
         odom_to_base_footprint.transform.translation.y = self.current_y
         odom_to_base_footprint.transform.translation.z = 0.0
@@ -158,10 +97,11 @@ class RobotStatePublisher(Node):
         odom_to_base_footprint.transform.rotation.z = q[2]
         odom_to_base_footprint.transform.rotation.w = q[3]
 
+        # Create transform from "base_footprint" to "base_link"
         base_footprint_to_base_link = TransformStamped()
         base_footprint_to_base_link.header.stamp = current_time
-        base_footprint_to_base_link.header.frame_id = 'base_footprint'
-        base_footprint_to_base_link.child_frame_id = 'base_link'
+        base_footprint_to_base_link.header.frame_id = "base_footprint"
+        base_footprint_to_base_link.child_frame_id = "base_link"
         base_footprint_to_base_link.transform.translation.x = 0.0
         base_footprint_to_base_link.transform.translation.y = 0.0
         base_footprint_to_base_link.transform.translation.z = 0.0
