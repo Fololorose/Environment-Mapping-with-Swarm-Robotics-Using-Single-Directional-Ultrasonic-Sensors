@@ -64,11 +64,6 @@ class WheelNode(Node):
         self.cmd_subscriber = self.create_subscription(
             String, "/cmd", self.cmd_callback, 10)
         
-        # Create a publisher for the current action
-        self.action_publisher = self.create_publisher(String, "/action", 10)
-
-        self.fixing_mode = False
-       
         # Timer to stop the robot if no command is received for a certain period
         self.timeout = 1.0  # 1 second timeout
         self.last_cmd_time = self.get_clock().now()
@@ -80,43 +75,25 @@ class WheelNode(Node):
                 
         # Perform the action based on the received command
         command = msg.data.lower()
-        if command == "enter fixing mode":
-            self.fixing_mode = True
-            self.get_logger().info("Entering fixing mode")
-        elif command == "exit fixing mode":
-            self.fixing_mode = False
-            self.get_logger().info("Exiting fixing mode")
+        
+        if command == "forward":
+            # forward()
+            pass
+        elif command == "left":
+            # turnLeft()
+            pass
+        elif command == 'right':
+            # turnRight()
+            pass
         else:
-            if not self.fixing_mode:
-                if command == "forward":
-                    # forward
-                    pass
-                elif command == "left":
-                    # turnLeft()
-                    pass
-                elif command == 'right':
-                    # turnRight()
-                    pass
-                else:
-                    stop()
-                
-                # Publish the action if not in fixing mode
-                action_msg = String()
-                action_msg.data = command
-                self.action_publisher.publish(action_msg)
-                self.get_logger().info(f'Action: {command}')
+            stop()
+
+        self.get_logger().info(f'Action: {command}')
     
     def check_timeout(self):
         # Stop the robot if no command is received for the specified timeout
         if (self.get_clock().now() - self.last_cmd_time).nanoseconds / 1e9 > self.timeout:
             stop()
-            self.publish_action("stop")
-            
-    def publish_action(self, action):
-        msg = String()
-        msg.data = action
-        self.action_publisher.publish(msg)
-        self.get_logger().info(f'Action: {action}')
 
 def main(args=None):
     rclpy.init(args=args) # Initialise the ROS client library

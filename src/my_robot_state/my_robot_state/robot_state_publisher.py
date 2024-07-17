@@ -23,10 +23,13 @@ class RobotStatePublisher(Node):
         self.current_x = 0.0
         self.current_y = 0.0
         self.current_theta = 0.0
+        
+        # Fixing mode state
+        self.fixing_mode = False
 
         # Create a subscriber to receive the action
         self.action_subscriber = self.create_subscription(
-            String, "/action", self.action_callback, 10)
+            String, "/cmd", self.action_callback, 10)
 
         self.get_logger().info("Robot State Publisher started")
 
@@ -35,19 +38,21 @@ class RobotStatePublisher(Node):
 
     def action_callback(self, msg):
         action = msg.data
-        if action == "forward":
-            self.move_forward()
-        elif action == "backward":
-            self.move_backward()
-        elif action == "left":
-            self.turn_left()
-        elif action == "right":
-            self.turn_right()
-        elif action == "stop":
-            # Handle stop action if needed
-            pass
-        else:
-            self.get_logger().warning(f"Unknown action received: {action}")
+        if action == "enter fixing mode":
+            self.fixing_mode = True
+        elif action == "exit fixing mode":
+            self.fixing_mode = False
+        elif not self.fixing_mode:
+            if action == "forward":
+                self.move_forward()
+            elif action == "backward":
+                self.move_backward()
+            elif action == "left":
+                self.turn_left()
+            elif action == "right":
+                self.turn_right()
+            elif action == "stop":
+                self.stop()
 
     def move_forward(self):
         self.current_x += 0.01 * math.cos(self.current_theta)
@@ -66,6 +71,9 @@ class RobotStatePublisher(Node):
     def turn_right(self):
         self.current_theta -= math.pi / 2 # 90-degree turn
         self.get_logger().info("Turning right")
+        
+    def stop(self):
+        self.get_logger().info("Stopping")
 
     def publish_transforms(self):
         current_time = self.get_clock().now().to_msg()
