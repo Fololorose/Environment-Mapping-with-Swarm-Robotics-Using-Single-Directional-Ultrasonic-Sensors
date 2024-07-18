@@ -4,6 +4,7 @@ from .PCA9685 import PCA9685
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
+# from sensor_msgs.msg import LaserScan
 
 # Servo configuration
 pwm = PCA9685(0x40)
@@ -64,6 +65,10 @@ class WheelNode(Node):
         self.cmd_subscriber = self.create_subscription(
             String, "/cmd", self.cmd_callback, 10)
         
+        # # Create a subscriber for the scan data
+        # self.scan_subscriber = self.create_subscription(
+        #     LaserScan, "/scan", self.scan_callback, 10)
+        
         # Timer to stop the robot if no command is received for a certain period
         self.timeout = 1.0  # 1 second timeout
         self.last_cmd_time = self.get_clock().now()
@@ -77,18 +82,44 @@ class WheelNode(Node):
         command = msg.data.lower()
         
         if command == "forward":
-            # forward()
+            forward()
+            time.sleep(0.1)  # Reduce the duration to make the movement shorter
+            stop()  # Stop the robot after the forward movement
             pass
         elif command == "left":
-            # turnLeft()
+            turnLeft()
+            time.sleep(0.1)  # Reduce the duration to make the movement shorter
+            stop()
             pass
         elif command == 'right':
-            # turnRight()
+            turnRight()
+            time.sleep(0.1)  # Reduce the duration to make the movement shorter
+            stop()
             pass
         else:
             stop()
 
         self.get_logger().info(f'Action: {command}')
+      
+    # Code for Robot Automovement  
+    # def scan_callback(self, msg):
+        # # Extract the left, center, and right distances from the scan data
+        # left = msg.ranges[0]
+        # center = msg.ranges[1]
+        # right = msg.ranges[2]
+        
+        # # Stop the robot if the center distance is between 0 and 30
+        # if 0 < center < 30:
+        #     stop()
+        #     # Compare the left and right distances to decide the direction
+        #     if left > right:
+        #         turnLeft()
+        #     else:
+        #         turnRight()
+        #     time.sleep(0.1)
+        #     stop()
+        # else:
+        #     forward()
     
     def check_timeout(self):
         # Stop the robot if no command is received for the specified timeout

@@ -55,21 +55,21 @@ class RobotStatePublisher(Node):
                 self.stop()
 
     def move_forward(self):
-        self.current_x += 0.01 * math.cos(self.current_theta)
-        self.current_y += 0.01 * math.sin(self.current_theta)
+        self.current_x += 0.05 * math.cos(self.current_theta)
+        self.current_y += 0.05 * math.sin(self.current_theta)
         self.get_logger().info("Moving forward")
         
     def move_backward(self):
-        self.current_x -= 0.01 * math.cos(self.current_theta)
-        self.current_y -= 0.01 * math.sin(self.current_theta)
+        self.current_x -= 0.05 * math.cos(self.current_theta)
+        self.current_y -= 0.05 * math.sin(self.current_theta)
         self.get_logger().info("Moving backward")
 
     def turn_left(self):
-        self.current_theta += math.pi / 2 # 90-degree turn
+        self.current_theta += math.pi / 8 # 90-degree turn
         self.get_logger().info("Turning left")
         
     def turn_right(self):
-        self.current_theta -= math.pi / 2 # 90-degree turn
+        self.current_theta -= math.pi / 12 # 90-degree turn
         self.get_logger().info("Turning right")
         
     def stop(self):

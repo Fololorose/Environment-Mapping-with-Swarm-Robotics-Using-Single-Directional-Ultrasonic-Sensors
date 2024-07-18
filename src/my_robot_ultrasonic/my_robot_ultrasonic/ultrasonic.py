@@ -3,7 +3,7 @@ import RPi.GPIO as GPIO
 import time
 
 class Ultrasonic:
-    def __init__(self, gpio_trigger, gpio_echo, range_min = 5, range_max = 400):
+    def __init__(self, gpio_trigger, gpio_echo, range_min = 5, range_max = 200):
         # Initialise GPIO mode
         GPIO.setmode(GPIO.BCM)
         
