@@ -11,7 +11,7 @@ pwm = PCA9685(0x40)
 pwm.setPWMFreq(50)
 
 # Initialise pulses
-pulse0 = 100
+pulse0 = 0
 pulse1 = 0
 
 def stop():
