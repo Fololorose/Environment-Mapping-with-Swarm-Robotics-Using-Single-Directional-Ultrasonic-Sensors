@@ -100,10 +100,3 @@ conda activate ros2
   ```sh
   ros2 run rviz2 rviz2 -d /opt/ros/humble/share/nav2_bringup/rviz/nav2_default_view.rviz
   ```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-You can copy this content directly into a `README.md` file in your GitHub repository.
