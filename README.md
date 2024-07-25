@@ -1,5 +1,3 @@
-Got it! Here's the complete `README.md` file including all steps and details:
-
 ```markdown
 # Environment Mapping with Swarm Robotics Using Single-Directional Ultrasonic Sensors
 
